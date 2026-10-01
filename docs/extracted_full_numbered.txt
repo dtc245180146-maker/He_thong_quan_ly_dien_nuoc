@@ -1,0 +1,2198 @@
+0001: TRƯỜNG ĐẠI HỌC CÔNG NGHỆ THÔNG TIN VÀ TRUYỀN THÔNG
+0002: KHOA CÔNG NGHỆ THÔNG TIN
+0003: BÁO CÁO DỰ ÁN
+0004: HỌC PHẦN: ỨNG DỤNG TRÍ TUỆ NHÂN TẠO
+0005: Chủ đề: Hệ thống quản lý hóa đơn điện nước có tích hợp AI
+0006: Giảng viên hướng dẫn: Nguyễn Đình Dũng
+0007: Lớp: KTPM K23C
+0008: Nhóm sinh viên thực hiện:
+0009: STT
+0010: Mã sinh viên
+0011: Họ và Tên
+0012: 1
+0013: DTC245180083
+0014: Nguyễn Duy Niên (Nhóm trưởng)
+0015: 2
+0016: DTC245180146
+0017: Ngô Thanh Tú
+0018: KẾ HOẠCH THỰC HIỆN – PHÁT TRIỂN ỨNG DỤNG CHUYÊN SÂU
+0019: Nguyễn Duy Niên ( Trưởng nhóm )
+0020: Ngô Thanh Tú
+0021: Tên ứng dụng: Hệ thống quản lý hóa đơn điện nước có tích hợp AI
+0022: Thời gian thực hiện: Từ 27/07/2026 đến 27/09/2026 (9 tuần)
+0023: Kế hoạch chi tiết
+0024: Danh sách các câu hỏi khi thu thập và làm rõ yêu cầu của ứng dụng
+0025: TT
+0026: Câu hỏi
+0027: Trả lời
+0028: Ghi chú
+0029: 1
+0030: Hệ thống được xây dựng nhằm mục đích gì?
+0031: Quản lý việc sử dụng, lập hóa đơn và thanh toán điện nước.
+0032: 2
+0033: Ai sử dụng hệ thống?
+0034: Admin và User.
+0035: 3
+0036: Admin cần quản lý những thông tin nào?
+0037: Hộ/phòng, đồng hồ, đơn giá, chỉ số, hóa đơn và thanh toán.
+0038: 4
+0039: User cần sử dụng những chức năng nào?
+0040: Xem hóa đơn, lịch sử tiêu thụ và các chức năng AI.
+0041: 5
+0042: Hệ thống có quản lý hộ/phòng không?
+0043: Có. Admin có thể thêm, sửa, xóa và xem thông tin hộ/phòng.
+0044: 6
+0045: Hệ thống có quản lý đồng hồ điện nước không?
+0046: Có. Quản lý đồng hồ điện và nước của từng hộ/phòng.
+0047: 7
+0048: Hệ thống có thiết lập đơn giá không?
+0049: Có. Admin thiết lập đơn giá điện và nước.
+0050: 8
+0051: Hệ thống có nhập chỉ số điện nước không?
+0052: Có. Admin nhập chỉ số theo từng kỳ.
+0053: 9
+0054: Hệ thống lập hóa đơn như thế nào?
+0055: Tính lượng tiêu thụ dựa trên chỉ số và tính tiền theo đơn giá.
+0056: 10
+0057: Hệ thống có theo dõi thanh toán không?
+0058: Có. Theo dõi số tiền, trạng thái thanh toán và công nợ.
+0059: 11
+0060: User có thể tra cứu thông tin gì?
+0061: Hóa đơn và lịch sử tiêu thụ điện nước.
+0062: 12
+0063: Hệ thống có thống kê không?
+0064: Có. Thống kê mức tiêu thụ, hóa đơn và thanh toán.
+0065: 13
+0066: AI được sử dụng để làm gì?
+0067: Phân tích dữ liệu điện nước, phát hiện bất thường và đưa ra gợi ý tiết kiệm.
+0068: 14
+0069: AI sử dụng những dữ liệu nào?
+0070: Chỉ số, lịch sử tiêu thụ, hóa đơn và thanh toán.
+0071: 15
+0072: AI có được thay đổi dữ liệu gốc không?
+0073: Không. AI chỉ phân tích và đưa ra kết quả tham khảo.
+0074: 16
+0075: Hệ thống có phân quyền người dùng không?
+0076: Có. Admin và User có quyền khác nhau.
+0077: 17
+0078: Hệ thống có lưu dữ liệu vào CSDL không?
+0079: Có. Dữ liệu được lưu trữ để quản lý và phân tích.
+0080: 18
+0081: Hệ thống cần đảm bảo những yêu cầu gì?
+0082: Bảo mật, chính xác, toàn vẹn dữ liệu và dễ sử dụng.
+0083: 19
+0084: Nếu dữ liệu nhập không hợp lệ thì sao?
+0085: Hệ thống thông báo lỗi và yêu cầu nhập lại.
+0086: 20
+0087: Nếu AI không phản hồi thì sao?
+0088: Hệ thống thông báo lỗi và không làm thay đổi dữ liệu gốc.
+0089: 2. Yêu cầu chức năng/phi chức năng của ứng dụng
+0090: 2.1. Yêu cầu chức năng
+0091: ID
+0092: Chức năng
+0093: Câu hỏi tương ứng
+0094: Mô tả
+0095: FR01
+0096: Đăng nhập và phân quyền
+0097: 2, 16
+0098: Cho phép Admin/User đăng nhập và sử dụng chức năng theo quyền.
+0099: FR02
+0100: Quản lý hộ/phòng
+0101: 3, 5
+0102: Admin thêm, sửa, xóa và xem thông tin hộ/phòng.
+0103: FR03
+0104: Quản lý đồng hồ điện nước
+0105: 3, 6
+0106: Admin quản lý đồng hồ điện và nước của hộ/phòng.
+0107: FR04
+0108: Thiết lập đơn giá điện nước
+0109: 3, 7
+0110: Admin thiết lập đơn giá điện và nước.
+0111: FR05
+0112: Nhập chỉ số điện nước
+0113: 3, 8
+0114: Admin nhập và lưu chỉ số điện nước theo kỳ.
+0115: FR06
+0116: Lập hóa đơn
+0117: 9
+0118: Tính lượng tiêu thụ và lập hóa đơn dựa trên chỉ số, đơn giá.
+0119: FR07
+0120: Theo dõi thanh toán
+0121: 10
+0122: Theo dõi số tiền, trạng thái thanh toán và công nợ.
+0123: FR08
+0124: Tra cứu hóa đơn và lịch sử tiêu thụ
+0125: 4, 11
+0126: User xem hóa đơn và lịch sử sử dụng điện nước.
+0127: FR09
+0128: Xem thống kê
+0129: 12
+0130: Hiển thị thống kê về tiêu thụ, hóa đơn và thanh toán.
+0131: FR10
+0132: AI phân tích dữ liệu
+0133: 13, 14
+0134: AI phân tích chỉ số, lịch sử tiêu thụ, hóa đơn và thanh toán.
+0135: FR11
+0136: AI cảnh báo bất thường và gợi ý tiết kiệm
+0137: 13, 14
+0138: AI phát hiện bất thường và đưa ra gợi ý tiết kiệm.
+0139: 2.2. Yêu cầu phi chức năng
+0140: ID
+0141: Yêu cầu
+0142: Mô tả
+0143: Câu hỏi
+0144: NFR01
+0145: Bảo mật
+0146: Hệ thống phải bảo vệ tài khoản và dữ liệu người dùng.
+0147: 18
+0148: NFR02
+0149: Phân quyền
+0150: Admin và User chỉ được sử dụng các chức năng phù hợp với quyền.
+0151: 16, 18
+0152: NFR03
+0153: Chính xác
+0154: Kết quả tính hóa đơn phải dựa trên dữ liệu chỉ số và đơn giá.
+0155: 18
+0156: NFR04
+0157: Toàn vẹn dữ liệu
+0158: Dữ liệu chỉ số, hóa đơn và thanh toán không được tự ý thay đổi.
+0159: 15, 18
+0160: NFR05
+0161: Dễ sử dụng
+0162: Giao diện và thao tác phải đơn giản, dễ hiểu.
+0163: 18
+0164: NFR06
+0165: Xử lý lỗi
+0166: Hệ thống phải thông báo khi dữ liệu nhập không hợp lệ.
+0167: 19
+0168: NFR07
+0169: AI có kiểm soát
+0170: AI chỉ phân tích dữ liệu được cung cấp, không thay đổi dữ liệu gốc.
+0171: 15
+0172: NFR08
+0173: Xử lý lỗi AI
+0174: Khi AI không phản hồi, hệ thống phải thông báo lỗi và bảo toàn dữ liệu.
+0175: 20
+0176: NFR09
+0177: Lưu trữ dữ liệu
+0178: Dữ liệu hệ thống phải được lưu trữ trong CSDL.
+0179: 17
+0180: 
+0181: 3. Sơ đồ phân cấp chức năng của ứng dụng
+0182: CHƯƠNG 1: GIỚI THIỆU CHUNG
+0183: 1.1. Mục đích
+0184: Tài liệu đặc tả yêu cầu phần mềm được xây dựng nhằm mô tả các yêu cầu của hệ thống quản lý hóa đơn điện nước hộ gia đình có tích hợp trí tuệ nhân tạo (AI).
+0185: Hệ thống được xây dựng nhằm hỗ trợ hộ gia đình, khu nhà trọ và chung cư mini trong việc quản lý phòng/hộ, đồng hồ điện nước, chỉ số tiêu thụ, hóa đơn, thanh toán và công nợ. Hệ thống giúp số hóa quy trình quản lý điện nước thay cho các phương pháp ghi chép thủ công hoặc sử dụng các bảng tính rời rạc.
+0186: Bên cạnh các chức năng quản lý thông thường, hệ thống tích hợp AI để phân tích dữ liệu tiêu thụ điện nước. AI có nhiệm vụ sinh nhận xét về xu hướng sử dụng, phát hiện các dấu hiệu tiêu thụ bất thường và đưa ra các gợi ý tiết kiệm điện nước ở mức tham khảo.
+0187: Tài liệu này là cơ sở để nhóm phát triển phân tích, thiết kế, xây dựng, kiểm thử và đánh giá hệ thống. Các yêu cầu được mô tả trong tài liệu nhằm đảm bảo các thành viên trong nhóm có cùng cách hiểu về chức năng, phạm vi và hoạt động của phần mềm.
+0188: 1.2. Phạm vi
+0189: Hệ thống hướng đến các hộ gia đình, khu nhà trọ và chung cư mini có nhu cầu quản lý việc sử dụng và thanh toán điện nước định kỳ.
+0190: Phạm vi của hệ thống bao gồm:
+0191: Quản lý tài khoản và phân quyền người dùng.
+0192: Quản lý khu trọ, phòng hoặc hộ gia đình.
+0193: Quản lý đồng hồ điện và nước.
+0194: Quản lý đơn giá điện và nước.
+0195: Nhập chỉ số điện nước định kỳ.
+0196: Tính toán tiền điện, tiền nước theo đơn giá.
+0197: Lập và quản lý hóa đơn.
+0198: Theo dõi trạng thái thanh toán và công nợ.
+0199: Tra cứu lịch sử tiêu thụ.
+0200: Hiển thị thống kê về tiêu thụ và doanh thu.
+0201: Tích hợp AI để phân tích mức tiêu thụ điện nước.
+0202: Cảnh báo dấu hiệu tiêu thụ bất thường.
+0203: Đưa ra các gợi ý tiết kiệm điện nước.
+0204: Hệ thống tập trung vào việc quản lý dữ liệu và hỗ trợ phân tích tiêu thụ. Kết quả phân tích của AI chỉ mang tính tham khảo và phải dựa trên dữ liệu thực tế được cung cấp cho hệ thống.
+0205: 1.3. Các định nghĩa, thuật ngữ và từ viết tắt
+0206: STT
+0207: Thuật ngữ / Từ viết tắt
+0208: Giải thích
+0209: Ghi chú
+0210: 1
+0211: AI
+0212: Artificial Intelligence – Trí tuệ nhân tạo
+0213: Công nghệ được tích hợp vào hệ thống
+0214: 2
+0215: SRS
+0216: Software Requirements Specification – Đặc tả yêu cầu phần mềm
+0217: Tài liệu mô tả yêu cầu hệ thống
+0218: 3
+0219: UC
+0220: Use Case – Ca sử dụng
+0221: Mô tả một chức năng của hệ thống
+0222: 4
+0223: Admin
+0224: Người quản lý / Chủ nhà
+0225: Tác nhân quản lý hệ thống
+0226: 5
+0227: User
+0228: Người thuê / Thành viên hộ
+0229: Tác nhân sử dụng hệ thống
+0230: 6
+0231: API
+0232: Application Programming Interface
+0233: Giao tiếp giữa các thành phần phần mềm
+0234: 7
+0235: CRUD
+0236: Create, Read, Update, Delete
+0237: Các thao tác cơ bản với dữ liệu
+0238: 8
+0239: SDLC
+0240: Software Development Life Cycle
+0241: Vòng đời phát triển phần mềm
+0242: 9
+0243: AI Analysis
+0244: Phân tích bằng AI
+0245: Chức năng AI phân tích dữ liệu tiêu thụ
+0246: 10
+0247: Anomaly Detection
+0248: Phát hiện bất thường
+0249: Phát hiện biến động tiêu thụ bất thường
+0250: 11
+0251: Prompt
+0252: Câu lệnh/yêu cầu gửi cho AI
+0253: Dùng để yêu cầu AI phân tích dữ liệu
+0254: 12
+0255: ERD
+0256: Entity Relationship Diagram
+0257: Biểu đồ quan hệ thực thể
+0258: 13
+0259: CSDL
+0260: Cơ sở dữ liệu
+0261: Nơi lưu trữ dữ liệu hệ thống
+0262: CHƯƠNG 2: MÔ TẢ TỔNG QUAN ỨNG DỤNG
+0263: 2.1. Khảo sát hiện trạng
+0264: 2.1.1. Hiện trạng quản lý điện nước tại các hộ gia đình, khu trọ
+0265: Điện và nước là những nhu cầu thiết yếu trong sinh hoạt hằng ngày của mỗi hộ gia đình. Đối với các khu nhà trọ, chung cư mini hoặc các hộ gia đình có nhiều phòng sử dụng riêng, việc theo dõi chỉ số điện nước và tính toán tiền điện nước được thực hiện định kỳ hàng tháng.
+0266: Hiện nay, tại các hộ gia đình và khu trọ nhỏ, việc quản lý điện nước thường được thực hiện bằng các phương pháp đơn giản như ghi chép vào sổ sách, chụp ảnh đồng hồ điện nước rồi gửi qua các ứng dụng nhắn tin hoặc sử dụng bảng tính Excel cơ bản. Các phương pháp này phù hợp khi số lượng phòng và lượng dữ liệu ít, tuy nhiên khi số lượng phòng tăng lên thì việc quản lý trở nên phức tạp.
+0267: Quy trình quản lý thông thường gồm các bước:
+0268: Ghi nhận chỉ số điện và nước đầu kỳ hoặc cuối kỳ.
+0269: Nhập chỉ số mới của từng phòng/hộ.
+0270: Tính lượng điện, nước đã sử dụng.
+0271: Áp dụng đơn giá để tính tiền.
+0272: Lập hóa đơn.
+0273: Thông báo số tiền cần thanh toán.
+0274: Theo dõi trạng thái thanh toán.
+0275: Tổng hợp doanh thu và công nợ.
+0276: Việc thực hiện thủ công nhiều bước có thể làm tăng thời gian quản lý và phát sinh sai sót trong quá trình nhập liệu, tính toán hoặc tổng hợp thông tin.
+0277: 2.1.2. Khảo sát thực tế
+0278: Để đánh giá nhu cầu sử dụng hệ thống, việc khảo sát có thể tập trung vào các đối tượng gồm chủ nhà trọ, người quản lý phòng và người thuê phòng.
+0279: Nội dung khảo sát tập trung vào các vấn đề:
+0280: Phương pháp đang sử dụng để ghi chỉ số điện nước.
+0281: Cách tính tiền điện, tiền nước hàng tháng.
+0282: Khó khăn khi quản lý nhiều phòng/hộ.
+0283: Khó khăn trong việc theo dõi hóa đơn.
+0284: Khó khăn trong việc theo dõi người đã thanh toán và người còn nợ.
+0285: Nhu cầu xem lịch sử tiêu thụ.
+0286: Nhu cầu nhận cảnh báo khi mức tiêu thụ tăng bất thường.
+0287: Nhu cầu nhận các gợi ý tiết kiệm điện nước.
+0288: 2.1.3. Những bất cập tồn tại
+0289: Qua quá trình khảo sát hiện trạng, phương pháp quản lý thủ công có một số hạn chế:
+0290: Thứ nhất, dễ xảy ra sai sót trong quá trình nhập chỉ số và tính toán hóa đơn; đặc biệt, việc áp dụng đơn giá theo bậc thang có thể làm quá trình tính tiền phức tạp hơn.
+0291: biệt, việc tính tiền điện theo giá bậc thang làm cho quá trình tính toán phức tạp hơn.
+0292: Thứ hai, khó phát hiện mức tiêu thụ bất thường.
+0293: Thứ ba, thiếu minh bạch trong quá trình quản lý.
+0294: Thứ tư, khó theo dõi công nợ.
+0295: Thứ năm, thiếu công cụ phân tích dữ liệu.
+0296: 2.2.1. Yêu cầu chức năng quản lý cốt lõi
+0297: Hệ thống cần đáp ứng các chức năng quản lý sau:
+0298: FR01. Đăng nhập và phân quyền
+0299: Hệ thống cho phép người dùng đăng nhập và phân quyền theo vai trò Admin hoặc User.
+0300: Admin có quyền quản lý dữ liệu hệ thống. User chỉ được truy cập các thông tin thuộc phạm vi phòng/hộ của mình.
+0301: FR02. Quản lý hộ/phòng và đồng hồ điện nước
+0302: Admin có thể thêm, sửa, xóa và tra cứu thông tin phòng/hộ.
+0303: Mỗi phòng/hộ có thể được liên kết với thông tin đồng hồ điện và đồng hồ nước tương ứng.
+0304: FR05. Nhập chỉ số điện nước
+0305: Admin nhập chỉ số điện và nước theo từng kỳ.
+0306: Dữ liệu bao gồm chỉ số cũ và chỉ số mới của điện và nước. Hệ thống sử dụng dữ liệu này để tính lượng tiêu thụ.
+0307: FR06. Tính hóa đơn theo đơn giá
+0308: Hệ thống tự động tính toán tiền điện và tiền nước dựa trên lượng tiêu thụ và đơn giá được thiết lập.
+0309: Hệ thống hỗ trợ phương án đơn giá cố định hoặc đơn giá theo bậc thang theo yêu cầu của đề tài.
+0310: FR07. Theo dõi thanh toán và công nợ
+0311: Hệ thống lưu trạng thái thanh toán của hóa đơn, bao gồm:
+0312: Chưa thanh toán.
+0313: Đã thanh toán.
+0314: Còn nợ.
+0315: Admin có thể theo dõi tình trạng thanh toán của từng phòng/hộ.
+0316: FR08. Tra cứu lịch sử tiêu thụ
+0317: Người dùng có thể xem lịch sử sử dụng điện nước theo tháng.
+0318: Dữ liệu lịch sử có thể được trình bày dưới dạng bảng hoặc biểu đồ để dễ dàng theo dõi sự thay đổi mức tiêu thụ.
+0319: FR10/FR11. Cảnh báo tiêu thụ tăng mạnh
+0320: Hệ thống kiểm tra sự thay đổi mức tiêu thụ giữa các tháng.
+0321: Nếu mức tiêu thụ tháng hiện tại tăng mạnh so với tháng trước, hệ thống tạo cảnh báo để người dùng kiểm tra.
+0322: FR09. Thống kê tiêu thụ, doanh thu và công nợ
+0323: Admin có thể xem các thông tin thống kê về:
+0324: Tổng lượng điện tiêu thụ.
+0325: Tổng lượng nước tiêu thụ.
+0326: Tổng tiền điện.
+0327: Tổng tiền nước.
+0328: Tổng doanh thu.
+0329: Tổng số tiền còn nợ.
+0330: 2.2.2. Yêu cầu chức năng AI tích hợp
+0331: AI01. Phân tích và nhận xét mức tiêu thụ
+0332: Hệ thống cung cấp dữ liệu lịch sử tiêu thụ cho AI, ưu tiên dữ liệu trong khoảng 3–6 tháng gần nhất.
+0333: AI phân tích sự thay đổi của lượng điện nước và sinh ra một đoạn nhận xét ngắn gọn về xu hướng sử dụng.
+0334: Ví dụ về kết quả mong muốn:
+0335: Mức tiêu thụ điện trong tháng hiện tại có xu hướng tăng so với các tháng trước. Người dùng nên kiểm tra các thiết bị có công suất lớn và theo dõi mức tiêu thụ trong kỳ tiếp theo.
+0336: AI phải chỉ nhận xét từ dữ liệu được cung cấp và không được tự tạo số liệu. Yêu cầu này được nêu rõ trong tài liệu bài toán.
+0337: AI02. Cảnh báo bất thường
+0338: Hệ thống kiểm tra mức tiêu thụ hiện tại so với dữ liệu lịch sử.
+0339: Theo yêu cầu của khung xương, nếu lượng tiêu thụ tháng này tăng trên 30% so với tháng trước, hệ thống có thể xác định đây là dấu hiệu bất thường và tạo cảnh báo.
+0340: Ví dụ:
+0341: Cảnh báo: Lượng nước tiêu thụ tháng này tăng mạnh so với tháng trước. Có thể cần kiểm tra hệ thống cấp nước hoặc các thiết bị sử dụng nước.
+0342: Cảnh báo chỉ mang tính tham khảo, không khẳng định chắc chắn nguyên nhân bất thường.
+0343: AI03. Gợi ý tiết kiệm điện nước
+0344: Dựa trên dữ liệu tiêu thụ được cung cấp, AI đưa ra các gợi ý tiết kiệm phù hợp.
+0345: Ví dụ:
+0346: Hạn chế sử dụng đồng thời nhiều thiết bị có công suất lớn.
+0347: Kiểm tra các thiết bị điện có thời gian hoạt động kéo dài.
+0348: Kiểm tra vòi nước và đường ống khi lượng nước tăng bất thường.
+0349: Theo dõi mức tiêu thụ trong các tháng tiếp theo.
+0350: Các gợi ý của AI chỉ mang tính tham khảo theo đúng yêu cầu của đề tài.
+0351: 2.2.3. Yêu cầu phi chức năng
+0352: NFR01. Tính chính xác
+0353: Đây là yêu cầu quan trọng của hệ thống.
+0354: Thuật toán tính tiền điện nước phải đảm bảo kết quả chính xác theo đơn giá được cấu hình.
+0355: Đối với AI, kết quả phân tích phải dựa trên dữ liệu thực tế được cung cấp. AI không được tự tạo hoặc thay đổi số liệu đầu vào.
+0356: NFR02. Hiệu năng
+0357: Hệ thống cần có thời gian phản hồi phù hợp đối với các thao tác thông thường như đăng nhập, tra cứu hóa đơn, nhập chỉ số và xem lịch sử tiêu thụ.
+0358: NFR03. Bảo mật
+0359: Thông tin tài khoản, dữ liệu người dùng, hóa đơn và lịch sử thanh toán phải được bảo vệ.
+0360: Người dùng chỉ được phép truy cập những dữ liệu phù hợp với quyền hạn của mình.
+0361: NFR04. Tính dễ sử dụng
+0362: Giao diện cần đơn giản, dễ hiểu và phù hợp với cả người quản lý và người sử dụng.
+0363: Các thông tin quan trọng như số tiền phải thanh toán, trạng thái hóa đơn, mức tiêu thụ và cảnh báo AI cần được trình bày rõ ràng.
+0364: NFR05. Tính tin cậy của AI
+0365: AI chỉ đóng vai trò hỗ trợ phân tích và đưa ra nhận xét tham khảo. Kết quả AI không được thay thế dữ liệu gốc hoặc kết quả tính toán hóa đơn.
+0366: Yêu cầu về tính chính xác và việc hạn chế AI tự tạo số liệu được nêu rõ trong khung xương của đề tài.
+0367: 2.3 Danh sách các tác nhân
+0368: Danh sách các tác nhân trong hệ thống
+0369: STT
+0370: Tác nhân
+0371: Mô tả
+0372: 1
+0373: Quản lý / Chủ nhà (Admin)
+0374: Quản lý phòng/hộ, đồng hồ, đơn giá, chỉ số, hóa đơn, thanh toán và thống kê.
+0375: 2
+0376: Người thuê / Thành viên hộ (User)
+0377: Xem hóa đơn, lịch sử tiêu thụ, biểu đồ và kết quả phân tích AI.
+0378: 3
+0379: AI API Service
+0380: Tiếp nhận dữ liệu được hệ thống cung cấp và sinh kết quả phân tích, cảnh báo, gợi ý theo yêu cầu.
+0381: 2.4 Danh sách Use case và mô tả
+0382: ID
+0383: Tên Use Case
+0384: Mô tả ngắn gọn Use Case
+0385: Chức năng
+0386: Ghi chú
+0387: UC001
+0388: Đăng nhập hệ thống
+0389: Cho phép người dùng đăng nhập và truy cập hệ thống theo quyền.
+0390: Xác thực tài khoản, phân quyền Admin/User.
+0391: Admin, User
+0392: UC002
+0393: Quản lý hộ/phòng
+0394: Cho phép Admin quản lý thông tin các hộ hoặc phòng.
+0395: Thêm, sửa, xóa, xem hộ/phòng.
+0396: Admin
+0397: UC003
+0398: Quản lý đồng hồ điện nước
+0399: Cho phép Admin quản lý đồng hồ của từng hộ/phòng.
+0400: Thêm, sửa, xóa, xem thông tin đồng hồ.
+0401: Admin
+0402: UC004
+0403: Thiết lập đơn giá điện nước
+0404: Cho phép Admin thiết lập đơn giá sử dụng điện và nước.
+0405: Thêm, sửa, xem đơn giá.
+0406: Admin
+0407: UC005
+0408: Nhập chỉ số điện nước
+0409: Cho phép Admin nhập chỉ số điện nước theo kỳ.
+0410: Nhập chỉ số cũ, chỉ số mới và tính lượng tiêu thụ.
+0411: Admin
+0412: UC006
+0413: Lập hóa đơn
+0414: Cho phép Admin tạo hóa đơn dựa trên chỉ số và đơn giá.
+0415: Tính tiền điện, tiền nước và tổng tiền.
+0416: Admin
+0417: UC007
+0418: Theo dõi thanh toán
+0419: Cho phép Admin theo dõi tình trạng thanh toán hóa đơn.
+0420: Cập nhật thanh toán và theo dõi công nợ.
+0421: Admin
+0422: UC008
+0423: Tra cứu lịch sử tiêu thụ
+0424: Cho phép User xem lịch sử sử dụng điện nước.
+0425: Xem lượng tiêu thụ theo kỳ/tháng.
+0426: User
+0427: UC009
+0428: Xem thống kê
+0429: Cho phép Admin theo dõi tình hình sử dụng và thanh toán.
+0430: Thống kê tiêu thụ, doanh thu và công nợ.
+0431: Admin
+0432: UC010
+0433: Phân tích và cảnh báo bằng AI
+0434: Cho phép AI phân tích dữ liệu tiêu thụ và phát hiện bất thường.
+0435: Phân tích chỉ số, hóa đơn, lịch sử tiêu thụ và đưa ra cảnh báo.
+0436: User, AI API
+0437: UC011
+0438: AI gợi ý tiết kiệm
+0439: Cho phép AI đưa ra các gợi ý sử dụng điện nước tiết kiệm.
+0440: Phân tích dữ liệu và đưa ra khuyến nghị tiết kiệm.
+0441: User, AI API
+0442: Mô hình uc tổng quan
+0443: 2.5.1  Sơ đồ uc phân  rã
+0444: CHƯƠNG 3: ĐẶC TẢ CÁC YÊU CẦU CHỨC NĂNG (FUNCTIONAL)
+0445: 3.1. Mục đích và phạm vi hệ thống
+0446: Chương này đặc tả chi tiết các chức năng của hệ thống theo 11 Use Case từ UC001 đến UC011, bao gồm tác nhân, điều kiện trước/sau, luồng chính và luồng thay thế. Các chức năng được phân quyền cho Admin, User và tích hợp AI API Service; AI chỉ hỗ trợ phân tích, cảnh báo và gợi ý, không thay đổi dữ liệu gốc.
+0447: 3.2. Yêu cầu chức năng chi tiết theo phân quyền
+0448: UC001 – Đăng nhập hệ thống
+0449: Use case
+0450: UC001_Đăng nhập hệ thống
+0451: Mục đích
+0452: Cho phép người dùng đăng nhập và truy cập hệ thống theo quyền.
+0453: Mô tả
+0454: Người dùng nhập tài khoản và mật khẩu để xác thực.
+0455: Tác nhân
+0456: Admin, User
+0457: Điều kiện trước
+0458: Người dùng đã có tài khoản.
+0459: Điều kiện sau
+0460: Đăng nhập thành công và chuyển đến giao diện phù hợp.
+0461: Luồng sự kiện chính
+0462: 1. Người dùng mở màn hình đăng nhập.2. Nhập tài khoản và mật khẩu.3. Nhấn Đăng nhập.4. Hệ thống xác thực.5. Hệ thống xác định quyền và hiển thị giao diện tương ứng.
+0463: Luồng sự kiện phụ
+0464: A1. Sai tài khoản/mật khẩu → thông báo lỗi.A2. Bỏ trống thông tin → yêu cầu nhập lại.A3. Tài khoản bị khóa → từ chối đăng nhập.
+0465: UC002 – Quản lý hộ/phòng
+0466: Use case
+0467: UC002_Quản lý hộ/phòng
+0468: Mục đích
+0469: Cho phép Admin quản lý thông tin hộ/phòng.
+0470: Mô tả
+0471: Admin thêm, sửa, xóa và xem thông tin hộ/phòng.
+0472: Tác nhân
+0473: Admin
+0474: Điều kiện trước
+0475: Admin đã đăng nhập và có quyền quản lý.
+0476: Điều kiện sau
+0477: Thông tin hộ/phòng được cập nhật trong hệ thống.
+0478: Luồng sự kiện chính
+0479: 1. Admin mở Quản lý hộ/phòng.2. Chọn thêm/sửa/xóa/xem.3. Nhập hoặc cập nhật thông tin.4. Hệ thống kiểm tra dữ liệu.5. Hệ thống lưu và cập nhật danh sách.
+0480: Luồng sự kiện phụ
+0481: A1. Thiếu thông tin → yêu cầu nhập lại.A2. Mã phòng đã tồn tại → thông báo lỗi.A3. Phòng có dữ liệu liên quan → cảnh báo khi xóa.
+0482: UC003 – Quản lý đồng hồ điện nước
+0483: Use case
+0484: UC003_Quản lý đồng hồ điện nước
+0485: Mục đích
+0486: Cho phép Admin quản lý đồng hồ điện và nước của từng hộ/phòng.
+0487: Mô tả
+0488: Admin thêm, sửa, xem và liên kết đồng hồ với hộ/phòng.
+0489: Tác nhân
+0490: Admin
+0491: Điều kiện trước
+0492: Admin đã đăng nhập và hộ/phòng đã tồn tại.
+0493: Điều kiện sau
+0494: Thông tin đồng hồ được lưu và liên kết với hộ/phòng.
+0495: Luồng sự kiện chính
+0496: 1. Admin mở Quản lý đồng hồ.2. Chọn thêm/sửa/xem.3. Nhập thông tin đồng hồ.4. Chọn hộ/phòng liên kết.5. Hệ thống kiểm tra và lưu dữ liệu.
+0497: Luồng sự kiện phụ
+0498: A1. Mã đồng hồ đã tồn tại → thông báo lỗi.A2. Hộ/phòng chưa tồn tại → yêu cầu tạo trước.A3. Thiếu thông tin → yêu cầu bổ sung.
+0499: UC004 – Thiết lập đơn giá điện nước
+0500: Use case
+0501: UC004_Thiết lập đơn giá điện nước
+0502: Mục đích
+0503: Cho phép Admin thiết lập đơn giá dùng để tính hóa đơn.
+0504: Mô tả
+0505: Admin thêm, sửa và quản lý đơn giá điện, nước.
+0506: Tác nhân
+0507: Admin
+0508: Điều kiện trước
+0509: Admin đã đăng nhập và có quyền quản lý đơn giá.
+0510: Điều kiện sau
+0511: Đơn giá được lưu và sẵn sàng sử dụng khi lập hóa đơn.
+0512: Luồng sự kiện chính
+0513: 1. Admin mở Thiết lập đơn giá.2. Chọn loại điện/nước.3. Nhập đơn giá hoặc các bậc giá.4. Hệ thống kiểm tra dữ liệu.5. Lưu đơn giá.
+0514: Luồng sự kiện phụ
+0515: A1. Đơn giá không hợp lệ → thông báo lỗi.A2. Thiếu thông tin → yêu cầu nhập lại.A3. Các bậc giá bị trùng → yêu cầu kiểm tra.
+0516: UC005 – Nhập chỉ số điện nước
+0517: Use case
+0518: UC005_Nhập chỉ số điện nước
+0519: Mục đích
+0520: Ghi nhận chỉ số điện nước định kỳ để tính tiêu thụ và lập hóa đơn.
+0521: Mô tả
+0522: Admin nhập chỉ số cũ và mới của đồng hồ điện, nước.
+0523: Tác nhân
+0524: Admin
+0525: Điều kiện trước
+0526: Admin đã đăng nhập; hộ/phòng và đồng hồ đã tồn tại.
+0527: Điều kiện sau
+0528: Chỉ số hợp lệ được lưu vào hệ thống.
+0529: Luồng sự kiện chính
+0530: 1. Admin chọn hộ/phòng và kỳ ghi.2. Hệ thống hiển thị chỉ số cũ.3. Admin nhập chỉ số mới.4. Hệ thống kiểm tra.5. Lưu chỉ số và tính lượng tiêu thụ.
+0531: Luồng sự kiện phụ
+0532: A1. Chỉ số mới nhỏ hơn chỉ số cũ → từ chối dữ liệu.A2. Chỉ số âm → thông báo lỗi.A3. Đã có chỉ số cùng kỳ → cảnh báo trùng dữ liệu.
+0533: UC006 – Lập hóa đơn
+0534: Use case
+0535: UC006_Lập hóa đơn
+0536: Mục đích
+0537: Tạo hóa đơn điện nước dựa trên chỉ số và đơn giá.
+0538: Mô tả
+0539: Hệ thống tính lượng tiêu thụ, tiền điện, tiền nước và tổng tiền hóa đơn.
+0540: Tác nhân
+0541: Admin
+0542: Điều kiện trước
+0543: Có chỉ số điện nước và đơn giá hợp lệ.
+0544: Điều kiện sau
+0545: Hóa đơn được tạo và lưu với trạng thái chưa thanh toán.
+0546: Luồng sự kiện chính
+0547: 1. Admin chọn hộ/phòng và kỳ.2. Hệ thống lấy chỉ số và đơn giá.3. Tính lượng tiêu thụ.4. Tính tiền điện và nước.5. Tính tổng tiền.6. Admin xác nhận.7. Hệ thống lưu hóa đơn.
+0548: Luồng sự kiện phụ
+0549: A1. Thiếu chỉ số → yêu cầu nhập chỉ số.A2. Thiếu đơn giá → yêu cầu thiết lập đơn giá.A3. Hóa đơn đã tồn tại → không tạo trùng.
+0550: UC007 – Theo dõi thanh toán
+0551: Use case
+0552: UC007_Theo dõi thanh toán
+0553: Mục đích
+0554: Cho phép Admin theo dõi thanh toán và công nợ.
+0555: Mô tả
+0556: Admin xem và cập nhật trạng thái thanh toán của hóa đơn.
+0557: Tác nhân
+0558: Admin
+0559: Điều kiện trước
+0560: Admin đã đăng nhập và có hóa đơn.
+0561: Điều kiện sau
+0562: Trạng thái thanh toán và công nợ được cập nhật.
+0563: Luồng sự kiện chính
+0564: 1. Admin mở danh sách hóa đơn.2. Chọn hóa đơn cần xử lý.3. Kiểm tra thông tin.4. Cập nhật trạng thái thanh toán.5. Hệ thống lưu và cập nhật công nợ.
+0565: Luồng sự kiện phụ
+0566: A1. Không tìm thấy hóa đơn → thông báo lỗi.A2. Hóa đơn đã thanh toán → không cho cập nhật sai trạng thái.A3. Dữ liệu thanh toán không hợp lệ → yêu cầu kiểm tra.
+0567: UC008 – Tra cứu hóa đơn và lịch sử tiêu thụ
+0568: Use case
+0569: UC008_Tra cứu hóa đơn và lịch sử tiêu thụ
+0570: Mục đích
+0571: Cho phép User xem hóa đơn và lịch sử sử dụng điện nước.
+0572: Mô tả
+0573: User xem hóa đơn hiện tại, lịch sử hóa đơn và mức tiêu thụ theo tháng.
+0574: Tác nhân
+0575: User
+0576: Điều kiện trước
+0577: User đã đăng nhập và được liên kết với hộ/phòng.
+0578: Điều kiện sau
+0579: User xem được dữ liệu thuộc quyền của mình.
+0580: Luồng sự kiện chính
+0581: 1. User mở chức năng tra cứu.2. Hệ thống xác định hộ/phòng.3. Hiển thị hóa đơn hiện tại.4. User chọn lịch sử hóa đơn hoặc tiêu thụ.5. Hệ thống hiển thị dữ liệu dạng bảng/biểu đồ.
+0582: Luồng sự kiện phụ
+0583: A1. Chưa có hóa đơn → thông báo chưa có dữ liệu.A2. Chưa có lịch sử → thông báo chưa có dữ liệu.A3. Truy cập dữ liệu không có quyền → từ chối truy cập.
+0584: UC009 – Xem thống kê
+0585: Use case
+0586: UC009_Xem thống kê
+0587: Mục đích
+0588: Cho phép Admin theo dõi tình hình tiêu thụ, doanh thu và công nợ.
+0589: Mô tả
+0590: Hệ thống tổng hợp dữ liệu và hiển thị thống kê theo thời gian hoặc hộ/phòng.
+0591: Tác nhân
+0592: Admin
+0593: Điều kiện trước
+0594: Admin đã đăng nhập và hệ thống có dữ liệu.
+0595: Điều kiện sau
+0596: Thống kê được hiển thị theo điều kiện lựa chọn.
+0597: Luồng sự kiện chính
+0598: 1. Admin mở Thống kê.2. Chọn thời gian/hộ/phòng.3. Hệ thống lấy dữ liệu.4. Tính toán thống kê.5. Hiển thị bảng và biểu đồ.
+0599: Luồng sự kiện phụ
+0600: A1. Không có dữ liệu → thông báo.A2. Khoảng thời gian không hợp lệ → yêu cầu chọn lại.A3. Lỗi truy xuất → thông báo và cho phép thử lại.
+0601: UC010 – Phân tích và cảnh báo bằng AI
+0602: Use case
+0603: UC010_Phân tích và cảnh báo bằng AI
+0604: Mục đích
+0605: Phân tích mức tiêu thụ và phát hiện dấu hiệu bất thường bằng AI.
+0606: Mô tả
+0607: Hệ thống lấy dữ liệu tiêu thụ, gửi đến AI để tạo nhận xét và cảnh báo.
+0608: Tác nhân
+0609: User, AI API Service
+0610: Điều kiện trước
+0611: User đã đăng nhập và có dữ liệu tiêu thụ để phân tích.
+0612: Điều kiện sau
+0613: Kết quả nhận xét và cảnh báo được hiển thị cho User. Dữ liệu gốc không bị thay đổi.
+0614: Luồng sự kiện chính
+0615: 1. User chọn Phân tích bằng AI.2. Hệ thống lấy dữ liệu tiêu thụ gần đây.3. Tạo Prompt từ dữ liệu thực tế.4. Gửi yêu cầu đến AI API.5. AI phân tích dữ liệu.6. Hệ thống nhận và kiểm tra kết quả.7. Hiển thị nhận xét và cảnh báo cho User.
+0616: Luồng sự kiện phụ
+0617: A1. Không đủ dữ liệu → thông báo chưa thể phân tích.A2. AI API không phản hồi → thông báo lỗi/thử lại.A3. Dữ liệu không hợp lệ → từ chối phân tích.A4. Tiêu thụ tăng trên 30% → hiển thị cảnh báo bất thường.A5. Không phát hiện bất thường → hiển thị nhận xét bình thường.
+0618: UC011 – AI gợi ý tiết kiệm
+0619: Use case
+0620: UC011_AI gợi ý tiết kiệm
+0621: Mục đích
+0622: Đưa ra các gợi ý giúp User sử dụng điện nước tiết kiệm hơn.
+0623: Mô tả
+0624: AI phân tích dữ liệu tiêu thụ và đưa ra các gợi ý tiết kiệm phù hợp.
+0625: Tác nhân
+0626: User, AI API Service
+0627: Điều kiện trước
+0628: User đã đăng nhập và có dữ liệu tiêu thụ.
+0629: Điều kiện sau
+0630: Các gợi ý tiết kiệm được hiển thị cho User.
+0631: Luồng sự kiện chính
+0632: 1. User chọn Gợi ý tiết kiệm.2. Hệ thống lấy dữ liệu tiêu thụ.3. Tạo Prompt.4. Gửi dữ liệu đến AI API.5. AI tạo gợi ý.6. Hệ thống kiểm tra kết quả.7. Hiển thị gợi ý cho User.
+0633: Luồng sự kiện phụ
+0634: A1. Không có dữ liệu → thông báo chưa đủ dữ liệu.A2. AI API lỗi → thông báo và cho phép thử lại.A3. Kết quả AI không hợp lệ → không hiển thị kết quả.A4. User không có quyền → từ chối truy cập.
+0635: 3.2.1. Nhóm chức năng của Quản lý / Chủ nhà (Admin)
+0636: UC001 – Đăng nhập hệ thống
+0637: Mục đích:Cho phép Admin truy cập hệ thống bằng tài khoản hợp lệ và được cấp quyền sử dụng các chức năng quản lý.
+0638: Chức năng:
+0639: Nhập tên tài khoản và mật khẩu.
+0640: Kiểm tra thông tin đăng nhập.
+0641: Xác định vai trò người dùng.
+0642: Cho phép truy cập các chức năng phù hợp với quyền hạn.
+0643: Thông báo khi thông tin đăng nhập không hợp lệ.
+0644: UC002 – Quản lý hộ/phòng
+0645: Mục đích:Cho phép Admin quản lý danh sách các hộ gia đình hoặc phòng trong khu trọ/chung cư mini.
+0646: Chức năng:
+0647: Thêm hộ/phòng.
+0648: Cập nhật thông tin hộ/phòng.
+0649: Xóa hộ/phòng.
+0650: Xem danh sách hộ/phòng.
+0651: Tra cứu thông tin hộ/phòng.
+0652: Liên kết hộ/phòng với người thuê hoặc thành viên tương ứng.
+0653: UC003 – Quản lý đồng hồ điện nước
+0654: Mục đích:Quản lý thông tin các đồng hồ điện và nước thuộc từng hộ/phòng.
+0655: Chức năng:
+0656: Thêm đồng hồ điện.
+0657: Thêm đồng hồ nước.
+0658: Gán đồng hồ cho phòng/hộ.
+0659: Cập nhật thông tin đồng hồ.
+0660: Xem thông tin đồng hồ.
+0661: Quản lý trạng thái sử dụng của đồng hồ.
+0662: UC004 – Thiết lập đơn giá điện nước
+0663: Mục đích:Cho phép Admin thiết lập đơn giá sử dụng để hệ thống có cơ sở tính tiền điện và tiền nước.
+0664: Chức năng:
+0665: Thêm đơn giá điện.
+0666: Thêm đơn giá nước.
+0667: Cập nhật đơn giá.
+0668: Xóa đơn giá không còn sử dụng.
+0669: Thiết lập giá cố định.
+0670: Thiết lập giá theo bậc thang.
+0671: Xem danh sách đơn giá hiện hành.
+0672: Hệ thống phải sử dụng đúng đơn giá đã thiết lập khi tính hóa đơn.
+0673: UC005 – Nhập chỉ số điện nước
+0674: Mục đích:Cho phép Admin nhập chỉ số điện và nước của từng phòng/hộ theo từng kỳ.
+0675: Dữ liệu đầu vào:
+0676: Mã phòng/hộ.
+0677: Tháng/năm.
+0678: Chỉ số điện cũ.
+0679: Chỉ số điện mới.
+0680: Chỉ số nước cũ.
+0681: Chỉ số nước mới.
+0682: Chức năng:
+0683: Nhập chỉ số định kỳ.
+0684: Kiểm tra tính hợp lệ của dữ liệu.
+0685: Lưu chỉ số vào hệ thống.
+0686: Tra cứu lại chỉ số đã nhập.
+0687: Hệ thống cần kiểm tra trường hợp chỉ số mới nhỏ hơn chỉ số cũ để hạn chế dữ liệu không hợp lệ.
+0688: UC006 – Lập hóa đơn
+0689: Mục đích:Tự động tính toán lượng điện nước tiêu thụ và lập hóa đơn cho từng phòng/hộ.
+0690: Quy trình chính:
+0691: Admin chọn phòng/hộ.
+0692: Hệ thống lấy chỉ số điện nước của kỳ hiện tại.
+0693: Tính lượng điện tiêu thụ.
+0694: Tính lượng nước tiêu thụ.
+0695: Lấy đơn giá tương ứng.
+0696: Tính tiền điện.
+0697: Tính tiền nước.
+0698: Tính tổng tiền hóa đơn.
+0699: Lưu hóa đơn.
+0700: Hóa đơn được chuyển sang trạng thái chờ thanh toán.
+0701: Yêu cầu:Kết quả tính tiền phải dựa trên chỉ số và đơn giá thực tế của hệ thống.
+0702: UC007 – Theo dõi thanh toán
+0703: Mục đích:Cho phép Admin quản lý tình trạng thanh toán và công nợ của các hóa đơn.
+0704: Chức năng:
+0705: Xem danh sách hóa đơn.
+0706: Xem trạng thái thanh toán.
+0707: Cập nhật trạng thái đã thanh toán.
+0708: Theo dõi các hóa đơn chưa thanh toán.
+0709: Theo dõi số tiền còn nợ.
+0710: Tra cứu lịch sử thanh toán.
+0711: Các trạng thái thanh toán chính gồm:
+0712: Chưa thanh toán.
+0713: Đã thanh toán.
+0714: Còn nợ.
+0715: UC009 – Xem thống kê
+0716: Mục đích:Cung cấp cho Admin các thông tin tổng hợp phục vụ quản lý.
+0717: Nội dung thống kê:
+0718: Tổng lượng điện tiêu thụ.
+0719: Tổng lượng nước tiêu thụ.
+0720: Tổng tiền điện.
+0721: Tổng tiền nước.
+0722: Tổng doanh thu.
+0723: Tổng công nợ.
+0724: Thống kê theo tháng.
+0725: Thống kê theo phòng/hộ.
+0726: Thông tin có thể được trình bày dưới dạng bảng và biểu đồ.
+0727: 3.2.2. Nhóm chức năng của Người thuê / Thành viên hộ (User)
+0728: UC008 – Tra cứu hóa đơn và lịch sử tiêu thụ
+0729: Mục đích:Cho phép User theo dõi thông tin hóa đơn và mức tiêu thụ điện nước của phòng/hộ.
+0730: Chức năng:
+0731: Xem hóa đơn hiện tại.
+0732: Xem số tiền cần thanh toán.
+0733: Xem trạng thái thanh toán.
+0734: Xem lịch sử hóa đơn.
+0735: Xem lịch sử tiêu thụ điện.
+0736: Xem lịch sử tiêu thụ nước.
+0737: Xem biểu đồ tiêu thụ theo tháng.
+0738: User chỉ được xem dữ liệu thuộc phòng/hộ mà mình được phân quyền.
+0739: UC010 – Phân tích và cảnh báo bằng AI
+0740: Mục đích:Sử dụng AI để phân tích dữ liệu tiêu thụ điện nước và cung cấp nhận xét, cảnh báo bất thường cho User.
+0741: Dữ liệu đầu vào:
+0742: Lịch sử tiêu thụ điện.
+0743: Lịch sử tiêu thụ nước.
+0744: Dữ liệu hóa đơn.
+0745: Ngưỡng cảnh báo.
+0746: Dữ liệu trong khoảng 3–6 tháng gần nhất nếu có.
+0747: Quy trình:
+0748: User mở thông tin hóa đơn.
+0749: User chọn chức năng “Phân tích bằng AI”.
+0750: Hệ thống lấy dữ liệu tiêu thụ cần phân tích.
+0751: Hệ thống tạo Prompt dựa trên dữ liệu thực tế.
+0752: Hệ thống gửi yêu cầu đến AI API.
+0753: AI phân tích dữ liệu.
+0754: Hệ thống nhận kết quả.
+0755: Hệ thống kiểm tra/lọc kết quả.
+0756: Hệ thống hiển thị nhận xét và cảnh báo cho User.
+0757: Kết quả đầu ra:
+0758: Nhận xét xu hướng tiêu thụ.
+0759: Dấu hiệu bất thường nếu có.
+0760: Tháng cần kiểm tra.
+0761: Thông tin cảnh báo phù hợp.
+0762: Theo khung xương của đề tài, trường hợp lượng tiêu thụ tháng hiện tại tăng trên 30% so với tháng trước có thể được xác định là dấu hiệu bất thường để cảnh báo.
+0763: Nguyên tắc AI:
+0764: AI chỉ được nhận xét dựa trên dữ liệu được cung cấp và không được tự tạo số liệu.
+0765: Prompt mẫu:
+0766: System:
+0767: Bạn là trợ lý phân tích hóa đơn điện nước.
+0768: Chỉ nhận xét từ dữ liệu được cung cấp, không tự tạo số liệu.
+0769: User:
+0770: Lịch sử tiêu thụ phòng 101:
+0771: {{utility_usage}}
+0772: Hãy tóm tắt biến động và chỉ ra tháng cần kiểm tra.
+0773: Prompt trên được xây dựng theo mẫu yêu cầu trong đề bài.
+0774: UC011 – AI gợi ý tiết kiệm
+0775: Mục đích:Đưa ra các gợi ý giúp User tham khảo các biện pháp sử dụng điện nước hợp lý hơn.
+0776: Dữ liệu đầu vào:
+0777: +
+0778: Lịch sử điện.
+0779: Lịch sử nước.
+0780: Mức tiêu thụ gần đây.
+0781: Kết quả phân tích bất thường nếu có.
+0782: Kết quả đầu ra:
+0783: Gợi ý tiết kiệm điện.
+0784: Gợi ý tiết kiệm nước.
+0785: Khuyến nghị kiểm tra khi mức tiêu thụ tăng bất thường.
+0786: Các gợi ý chỉ có tính chất tham khảo và phải được sinh dựa trên dữ liệu tiêu thụ được cung cấp cho AI.
+0787: 3.2.3. Bảng tổng hợp yêu cầu chức năng
+0788: ID
+0789: Tên Use Case
+0790: Tác nhân chính
+0791: Mức độ
+0792: UC001
+0793: Đăng nhập hệ thống
+0794: Admin / User
+0795: Bắt buộc
+0796: UC002
+0797: Quản lý hộ/phòng
+0798: Admin
+0799: Bắt buộc
+0800: UC003
+0801: Quản lý đồng hồ điện nước
+0802: Admin
+0803: Bắt buộc
+0804: UC004
+0805: Thiết lập đơn giá điện nước
+0806: Admin
+0807: Bắt buộc
+0808: UC005
+0809: Nhập chỉ số điện nước
+0810: Admin
+0811: Bắt buộc
+0812: UC006
+0813: Lập hóa đơn
+0814: Admin
+0815: Bắt buộc
+0816: UC007
+0817: Theo dõi thanh toán
+0818: Admin
+0819: Bắt buộc
+0820: UC008
+0821: Tra cứu hóa đơn và lịch sử tiêu thụ
+0822: User
+0823: Bắt buộc
+0824: UC009
+0825: Xem thống kê
+0826: Admin
+0827: Bắt buộc
+0828: UC010
+0829: Phân tích và cảnh báo bằng AI
+0830: User / AI API
+0831: Chức năng AI
+0832: UC011
+0833: AI gợi ý tiết kiệm
+0834: User / AI API
+0835: Chức năng AI
+0836: 3.3. Yêu cầu kỹ thuật
+0837: 3.3.1. Kiến trúc hệ thống
+0838: Hệ thống được xây dựng theo mô hình ứng dụng Web gồm các thành phần chính:
+0839: Frontend → Backend/API → Cơ sở dữ liệu
+0840: Backend đồng thời kết nối với:
+0841: Backend → AI API Service
+0842: Frontend chịu trách nhiệm cung cấp giao diện cho Admin và User.
+0843: Backend xử lý nghiệp vụ, xác thực người dùng, tính toán hóa đơn, quản lý dữ liệu và giao tiếp với AI API.
+0844: Cơ sở dữ liệu lưu trữ thông tin người dùng, phòng/hộ, đơn giá, chỉ số, hóa đơn và các kết quả phân tích AI.
+0845: AI API Service được sử dụng để thực hiện các chức năng phân tích, cảnh báo và gợi ý.
+0846: 3.3.2. Backend
+0847: Theo yêu cầu kỹ thuật của đề tài, Backend có thể sử dụng một trong các công nghệ:
+0848: FastAPI.
+0849: Flask.
+0850: Django.
+0851: Backend chịu trách nhiệm:
+0852: Xác thực và phân quyền.
+0853: Quản lý người dùng.
+0854: Quản lý phòng/hộ.
+0855: Quản lý đồng hồ.
+0856: Quản lý đơn giá.
+0857: Quản lý chỉ số.
+0858: Tính hóa đơn.
+0859: Quản lý thanh toán.
+0860: Cung cấp dữ liệu cho Frontend.
+0861: Gọi AI API.
+0862: Nhận và xử lý kết quả AI.
+0863: Khung xương của đề tài cho phép lựa chọn FastAPI, Flask hoặc Django cho Backend.
+0864: 3.3.3. Frontend
+0865: Frontend có thể được xây dựng bằng:
+0866: React.
+0867: Vue.
+0868: HTML/CSS/JavaScript.
+0869: Frontend cung cấp các giao diện:
+0870: Đăng nhập.
+0871: Quản lý hộ/phòng.
+0872: Quản lý đồng hồ.
+0873: Nhập chỉ số.
+0874: Thiết lập đơn giá.
+0875: Lập hóa đơn.
+0876: Theo dõi thanh toán.
+0877: Tra cứu lịch sử.
+0878: Thống kê.
+0879: Phân tích bằng AI.
+0880: Khung xương cho phép sử dụng React, Vue hoặc HTML/CSS/JavaScript.
+0881: 3.3.4. Cơ sở dữ liệu
+0882: Hệ thống có thể sử dụng:
+0883: SQLite.
+0884: MySQL.
+0885: PostgreSQL.
+0886: Cơ sở dữ liệu cần lưu trữ các nhóm thông tin chính:
+0887: Người dùng.
+0888: Phòng/hộ.
+0889: Đồng hồ điện nước.
+0890: Đơn giá.
+0891: Chỉ số điện nước.
+0892: Hóa đơn.
+0893: Thanh toán.
+0894: Kết quả phân tích AI.
+0895: Theo khung thiết kế của đề tài, các bảng chính gồm Users, Rooms, Prices, MeterReadings và Invoices.
+0896: 3.3.5. AI Engine
+0897: AI Engine có thể sử dụng một trong các nền tảng:
+0898: OpenAI.
+0899: Google Gemini.
+0900: Claude.
+0901: Hugging Face.
+0902: Ollama.
+0903: AI Engine được sử dụng cho ba nhóm chức năng:
+0904: Phân tích và nhận xét tiêu thụ.
+0905: Phát hiện/cảnh báo bất thường.
+0906: Gợi ý tiết kiệm điện nước.
+0907: Khung yêu cầu ban đầu cho phép sử dụng OpenAI, Gemini, Claude, Hugging Face hoặc Ollama.
+0908: 3.3.6. Yêu cầu kiểm thử
+0909: Hệ thống phải có kiểm thử cho các chức năng quan trọng:
+0910: Nhập chỉ số điện nước.
+0911: Tính hóa đơn.
+0912: Cảnh báo tiêu thụ bất thường.
+0913: Chức năng AI.
+0914: Ngoài các trường hợp thông thường, hệ thống cần kiểm tra dữ liệu không hợp lệ như:
+0915: Chỉ số âm.
+0916: Chỉ số mới nhỏ hơn chỉ số cũ.
+0917: Thiếu dữ liệu.
+0918: Dữ liệu mâu thuẫn.
+0919: Hóa đơn có giá trị không hợp lệ.
+0920: AI cũng được sử dụng để hỗ trợ sinh dữ liệu giả và thiết kế các trường hợp kiểm thử theo yêu cầu SDLC của đề tài.
+0921: 3.3.7. Yêu cầu bảo mật và dữ liệu
+0922: Hệ thống phải đảm bảo:
+0923: Mật khẩu không được lưu dưới dạng văn bản thuần.
+0924: Phân quyền truy cập theo vai trò.
+0925: User không được xem dữ liệu của phòng/hộ khác.
+0926: Dữ liệu hóa đơn và thanh toán phải được bảo vệ.
+0927: Dữ liệu gửi đến AI phải được kiểm soát.
+0928: AI không được phép tự thay đổi dữ liệu gốc.
+0929: Kết quả AI chỉ mang tính hỗ trợ và tham khảo.
+0930: Đặc biệt, dữ liệu số được hệ thống tính toán phải được ưu tiên xử lý bằng logic nghiệp vụ của Backend; AI không được thay thế thuật toán tính hóa đơn.
+0931: 3.4. HỆ THỐNG SƠ ĐỒ UML
+0932: Các sơ đồ được chuẩn hóa theo ký pháp UML và đồng bộ với UC001-UC011 của báo cáo.
+0933: Hình 3.1. Use Case Diagram tổng quan
+0934: Hình 3.2. Use Case Diagram phân rã - Admin
+0935: Hình 3.3. Use Case Diagram phân rã - User và AI API Service
+0936: 3.4.2. Mô hình dữ liệu ERD
+0937: Hình 3.4. ERD của hệ thống
+0938: 3.4.3. Sequence Diagram
+0939: Hình 3.5. Sequence Diagram - UC006 Lập hóa đơn
+0940: Hình 3.6. Sequence Diagram - UC010 Phân tích và cảnh báo bằng AI
+0941: 3.4.4. Activity Diagram
+0942: Hình 3.7. Activity Diagram - UC005 Nhập chỉ số điện nước
+0943: Hình 3.8. Activity Diagram - UC006 Lập hóa đơn
+0944: Hình 3.9. Activity Diagram - UC007 Theo dõi thanh toán
+0945: Hình 3.10. Activity Diagram - UC010 Phân tích và cảnh báo bằng AI
+0946: PHẦN II: THIẾT KẾ HƯỚNG ĐỐI TƯỢNG
+0947: Phần này trình bày Class Diagram và đặc tả chi tiết từng lớp của hệ thống, đồng bộ với ERD và các Use Case ở Phần I.
+0948: CHƯƠNG 4: THIẾT KẾ HƯỚNG ĐỐI TƯỢNG (MÔ HÌNH LỚP)
+0949: 4.1. Mô hình lớp (Class Diagram)
+0950: Hình 4.1. Class Diagram chuẩn UML của hệ thống
+0951: Mô hình lớp mô tả các thực thể nghiệp vụ chính và quan hệ giữa dữ liệu quản lý điện nước, hóa đơn, thanh toán và phân tích AI.
+0952: 4.2. Đặc tả các lớp
+0953: 4.2.1. Lớp NgườiDùng
+0954: Lưu thông tin tài khoản và vai trò người dùng.
+0955: Thành phần
+0956: Tên
+0957: Kiểu/Kết quả
+0958: Mô tả
+0959: Thuộc tính
+0960: maNguoiDung
+0961: int
+0962: Mã người dùng
+0963: Thuộc tính
+0964: tenDangNhap
+0965: string
+0966: Tên đăng nhập
+0967: Thuộc tính
+0968: matKhauMaHoa
+0969: string
+0970: Mật khẩu đã mã hóa
+0971: Thuộc tính
+0972: hoTen
+0973: string
+0974: Họ và tên
+0975: Thuộc tính
+0976: email
+0977: string
+0978: Email người dùng
+0979: Thuộc tính
+0980: soDienThoai
+0981: string
+0982: Số điện thoại
+0983: Thuộc tính
+0984: vaiTro
+0985: string
+0986: Vai trò Admin/User
+0987: Thuộc tính
+0988: trangThai
+0989: bool
+0990: Trạng thái tài khoản
+0991: Thuộc tính
+0992: ngayTao
+0993: datetime
+0994: Ngày tạo tài khoản
+0995: Phương thức
+0996: dangNhap()
+0997: bool
+0998: Đăng nhập hệ thống
+0999: Phương thức
+1000: dangXuat()
+1001: void
+1002: Đăng xuất hệ thống
+1003: Phương thức
+1004: capNhatThongTin()
+1005: void
+1006: Cập nhật thông tin cá nhân
+1007: 4.2.2. Lớp HộPhòng
+1008: Quản lý thông tin hộ gia đình/phòng.
+1009: Thành phần
+1010: Tên
+1011: Kiểu/Kết quả
+1012: Mô tả
+1013: Thuộc tính
+1014: maHoPhong
+1015: int
+1016: Mã hộ/phòng
+1017: Thuộc tính
+1018: maPhong
+1019: string
+1020: Mã phòng
+1021: Thuộc tính
+1022: tenHoPhong
+1023: string
+1024: Tên hộ/phòng
+1025: Thuộc tính
+1026: diaChi
+1027: string
+1028: Địa chỉ
+1029: Thuộc tính
+1030: soNguoi
+1031: int
+1032: Số người đang ở
+1033: Thuộc tính
+1034: soDienThoai
+1035: string
+1036: Số điện thoại liên hệ
+1037: Thuộc tính
+1038: trangThai
+1039: bool
+1040: Trạng thái hộ/phòng
+1041: Thuộc tính
+1042: ngayTao
+1043: datetime
+1044: Ngày tạo
+1045: Phương thức
+1046: them()
+1047: bool
+1048: Thêm hộ/phòng
+1049: Phương thức
+1050: capNhat()
+1051: bool
+1052: Cập nhật thông tin
+1053: Phương thức
+1054: xoa()
+1055: bool
+1056: Xóa hộ/phòng
+1057: Phương thức
+1058: layThongTin()
+1059: string
+1060: Lấy thông tin hộ/phòng
+1061: 4.2.3. Lớp ĐồngHồ
+1062: Quản lý đồng hồ điện hoặc nước gắn với hộ/phòng.
+1063: Thành phần
+1064: Tên
+1065: Kiểu/Kết quả
+1066: Mô tả
+1067: Thuộc tính
+1068: maDongHo
+1069: int
+1070: Mã đồng hồ
+1071: Thuộc tính
+1072: maHoPhong
+1073: int
+1074: Mã hộ/phòng liên kết
+1075: Thuộc tính
+1076: loaiDongHo
+1077: string
+1078: Loại đồng hồ điện/nước
+1079: Thuộc tính
+1080: maDongHoCode
+1081: string
+1082: Mã/seri đồng hồ
+1083: Thuộc tính
+1084: ngayLapDat
+1085: date
+1086: Ngày lắp đặt
+1087: Thuộc tính
+1088: trangThai
+1089: bool
+1090: Trạng thái hoạt động
+1091: Thuộc tính
+1092: ghiChu
+1093: string
+1094: Ghi chú
+1095: Phương thức
+1096: them()
+1097: bool
+1098: Thêm đồng hồ
+1099: Phương thức
+1100: capNhat()
+1101: bool
+1102: Cập nhật đồng hồ
+1103: Phương thức
+1104: xoa()
+1105: bool
+1106: Xóa đồng hồ
+1107: Phương thức
+1108: layThongTin()
+1109: string
+1110: Lấy thông tin đồng hồ
+1111: 4.2.4. Lớp ĐơnGiá
+1112: Lưu đơn giá điện/nước và thời điểm áp dụng.
+1113: Thành phần
+1114: Tên
+1115: Kiểu/Kết quả
+1116: Mô tả
+1117: Thuộc tính
+1118: maDonGia
+1119: int
+1120: Mã đơn giá
+1121: Thuộc tính
+1122: loaiDichVu
+1123: string
+1124: Loại điện hoặc nước
+1125: Thuộc tính
+1126: ngayApDung
+1127: date
+1128: Ngày bắt đầu áp dụng
+1129: Thuộc tính
+1130: ngayHetHan
+1131: date
+1132: Ngày hết hiệu lực
+1133: Thuộc tính
+1134: donGia
+1135: double
+1136: Đơn giá áp dụng
+1137: Thuộc tính
+1138: moTa
+1139: string
+1140: Mô tả đơn giá
+1141: Phương thức
+1142: them()
+1143: bool
+1144: Thêm đơn giá
+1145: Phương thức
+1146: capNhat()
+1147: bool
+1148: Cập nhật đơn giá
+1149: Phương thức
+1150: xoa()
+1151: bool
+1152: Xóa đơn giá
+1153: Phương thức
+1154: layDonGiaHienTai()
+1155: double
+1156: Lấy đơn giá đang hiệu lực
+1157: 4.2.5. Lớp ChỉSốĐồngHồ
+1158: Lưu chỉ số định kỳ và lượng tiêu thụ.
+1159: Thành phần
+1160: Tên
+1161: Kiểu/Kết quả
+1162: Mô tả
+1163: Thuộc tính
+1164: maChiSo
+1165: int
+1166: Mã bản ghi chỉ số
+1167: Thuộc tính
+1168: maDongHo
+1169: int
+1170: Mã đồng hồ
+1171: Thuộc tính
+1172: ngayGhi
+1173: date
+1174: Ngày ghi chỉ số
+1175: Thuộc tính
+1176: kyGhi
+1177: string
+1178: Kỳ ghi chỉ số
+1179: Thuộc tính
+1180: chiSoCu
+1181: double
+1182: Chỉ số kỳ trước
+1183: Thuộc tính
+1184: chiSoMoi
+1185: double
+1186: Chỉ số kỳ hiện tại
+1187: Thuộc tính
+1188: mucTieuThu
+1189: double
+1190: Lượng tiêu thụ
+1191: Thuộc tính
+1192: ghiChu
+1193: string
+1194: Ghi chú
+1195: Phương thức
+1196: them()
+1197: bool
+1198: Thêm chỉ số
+1199: Phương thức
+1200: capNhat()
+1201: bool
+1202: Cập nhật chỉ số
+1203: Phương thức
+1204: xoa()
+1205: bool
+1206: Xóa chỉ số
+1207: Phương thức
+1208: tinhMucTieuThu()
+1209: double
+1210: Tính chỉ số mới - chỉ số cũ
+1211: 4.2.6. Lớp HóaĐơn
+1212: Lưu hóa đơn được tính từ chỉ số và đơn giá.
+1213: Thành phần
+1214: Tên
+1215: Kiểu/Kết quả
+1216: Mô tả
+1217: Thuộc tính
+1218: maHoaDon
+1219: int
+1220: Mã hóa đơn
+1221: Thuộc tính
+1222: maHoPhong
+1223: int
+1224: Mã hộ/phòng
+1225: Thuộc tính
+1226: kyHoaDon
+1227: string
+1228: Kỳ hóa đơn
+1229: Thuộc tính
+1230: ngayLap
+1231: date
+1232: Ngày lập hóa đơn
+1233: Thuộc tính
+1234: tienDien
+1235: double
+1236: Tiền điện
+1237: Thuộc tính
+1238: tienNuoc
+1239: double
+1240: Tiền nước
+1241: Thuộc tính
+1242: tongTien
+1243: double
+1244: Tổng tiền hóa đơn
+1245: Thuộc tính
+1246: trangThai
+1247: string
+1248: Trạng thái hóa đơn
+1249: Thuộc tính
+1250: ghiChu
+1251: string
+1252: Ghi chú
+1253: Phương thức
+1254: taoHoaDon()
+1255: bool
+1256: Tạo hóa đơn
+1257: Phương thức
+1258: capNhat()
+1259: bool
+1260: Cập nhật hóa đơn
+1261: Phương thức
+1262: huyHoaDon()
+1263: bool
+1264: Hủy hóa đơn
+1265: Phương thức
+1266: layChiTiet()
+1267: string
+1268: Lấy chi tiết hóa đơn
+1269: 4.2.7. Lớp ThanhToán
+1270: Ghi nhận thanh toán và công nợ của hóa đơn.
+1271: Thành phần
+1272: Tên
+1273: Kiểu/Kết quả
+1274: Mô tả
+1275: Thuộc tính
+1276: maThanhToan
+1277: int
+1278: Mã thanh toán
+1279: Thuộc tính
+1280: maHoaDon
+1281: int
+1282: Mã hóa đơn liên kết
+1283: Thuộc tính
+1284: ngayThanhToan
+1285: date
+1286: Ngày thanh toán
+1287: Thuộc tính
+1288: soTien
+1289: double
+1290: Số tiền thanh toán
+1291: Thuộc tính
+1292: phuongThuc
+1293: string
+1294: Phương thức thanh toán
+1295: Thuộc tính
+1296: trangThai
+1297: string
+1298: Trạng thái giao dịch
+1299: Thuộc tính
+1300: maGiaoDich
+1301: string
+1302: Mã giao dịch
+1303: Thuộc tính
+1304: ghiChu
+1305: string
+1306: Ghi chú
+1307: Phương thức
+1308: taoThanhToan()
+1309: bool
+1310: Tạo giao dịch thanh toán
+1311: Phương thức
+1312: capNhat()
+1313: bool
+1314: Cập nhật thanh toán
+1315: Phương thức
+1316: hoanTien()
+1317: bool
+1318: Hoàn tiền khi cần
+1319: Phương thức
+1320: layThongTin()
+1321: string
+1322: Lấy thông tin thanh toán
+1323: 4.2.8. Lớp PhânTíchAI
+1324: Lưu kết quả phân tích, cảnh báo và gợi ý từ AI.
+1325: Thành phần
+1326: Tên
+1327: Kiểu/Kết quả
+1328: Mô tả
+1329: Thuộc tính
+1330: maPhanTich
+1331: int
+1332: Mã kết quả phân tích
+1333: Thuộc tính
+1334: maHoPhong
+1335: int
+1336: Mã hộ/phòng được phân tích
+1337: Thuộc tính
+1338: kyPhanTich
+1339: string
+1340: Kỳ phân tích
+1341: Thuộc tính
+1342: loaiPhanTich
+1343: string
+1344: Loại phân tích/cảnh báo/gợi ý
+1345: Thuộc tính
+1346: duLieuDauVao
+1347: text
+1348: Dữ liệu đầu vào gửi AI
+1349: Thuộc tính
+1350: ketQua
+1351: text
+1352: Kết quả phân tích AI
+1353: Thuộc tính
+1354: goiY
+1355: text
+1356: Gợi ý tiết kiệm
+1357: Thuộc tính
+1358: ngayTao
+1359: datetime
+1360: Thời điểm phân tích
+1361: Thuộc tính
+1362: trangThai
+1363: bool
+1364: Trạng thái kết quả
+1365: Phương thức
+1366: phanTich()
+1367: bool
+1368: Thực hiện phân tích dữ liệu
+1369: Phương thức
+1370: layKetQua()
+1371: string
+1372: Lấy kết quả phân tích
+1373: Phương thức
+1374: layGoiY()
+1375: string
+1376: Lấy gợi ý tiết kiệm
+1377: 4.2.9. Lớp DịchVụAI
+1378: Thành phần
+1379: Tên
+1380: Kiểu/Kết quả
+1381: Mô tả
+1382: Thuộc tính
+1383: maDichVu
+1384: int
+1385: Mã dịch vụ AI
+1386: Thuộc tính
+1387: nhaCungCap
+1388: string
+1389: Nhà cung cấp AI
+1390: Thuộc tính
+1391: apiKey
+1392: string
+1393: Khóa API kết nối
+1394: Thuộc tính
+1395: moHinh
+1396: string
+1397: Mô hình AI sử dụng
+1398: Thuộc tính
+1399: trangThai
+1400: bool
+1401: Trạng thái kết nối
+1402: Phương thức
+1403: guiYeuCau(duLieu: text)
+1404: string
+1405: Gửi dữ liệu/Prompt đến AI API
+1406: Phương thức
+1407: layKetQuaPhanTich()
+1408: string
+1409: Nhận kết quả phân tích
+1410: Phương thức
+1411: kiemTraKetNoi()
+1412: bool
+1413: Kiểm tra trạng thái kết nối AI
+1414: 4.3. Quan hệ giữa các lớp
+1415: Quan hệ
+1416: Bội số
+1417: Ý nghĩa
+1418: User – HouseholdRoom
+1419: 1 – 0..*
+1420: Một người dùng có thể được liên kết với một hoặc nhiều hộ/phòng theo quyền.
+1421: HouseholdRoom – Meter
+1422: 1 – 1..*
+1423: Mỗi hộ/phòng có một hoặc nhiều đồng hồ điện/nước.
+1424: Meter – MeterReading
+1425: 1 – 0..*
+1426: Một đồng hồ có nhiều bản ghi chỉ số theo kỳ.
+1427: HouseholdRoom – Invoice
+1428: 1 – 0..*
+1429: Một hộ/phòng có nhiều hóa đơn theo thời gian.
+1430: Pricing – Invoice
+1431: 1 – 0..*
+1432: Đơn giá hiệu lực được dùng để tính các hóa đơn tương ứng.
+1433: MeterReading – Invoice
+1434: 1..* – 1
+1435: Các bản ghi chỉ số là dữ liệu đầu vào để lập hóa đơn.
+1436: Invoice – Payment
+1437: 1 – 0..*
+1438: Một hóa đơn có thể chưa có hoặc có nhiều lần ghi nhận thanh toán.
+1439: HouseholdRoom/Invoice – AIAnalysis
+1440: 1 – 0..*
+1441: Kết quả AI gắn với dữ liệu tiêu thụ/hóa đơn cần phân tích; không làm thay đổi dữ liệu gốc.
+1442: 4.4. Nguyên tắc thiết kế liên quan đến AI
+1443: AIAnalysis chỉ tiếp nhận dữ liệu do hệ thống cung cấp; không tự tạo hoặc sửa chỉ số, hóa đơn hay thanh toán.
+1444: Việc tính lượng tiêu thụ và số tiền hóa đơn được thực hiện bằng logic nghiệp vụ của Backend; AI không thay thế thuật toán tính toán.
+1445: Kết quả AI gồm nhận xét, cảnh báo và gợi ý mang tính tham khảo. Khi AI API lỗi hoặc không phản hồi, dữ liệu gốc vẫn được bảo toàn.
+1446: Dữ liệu gửi tới AI cần được giới hạn ở phạm vi cần thiết cho phân tích và tuân theo quyền truy cập của người dùng.
+1447: 4.5. ĐẶC TẢ CHI TIẾT CÁC LỚP
+1448: Phần này bổ sung đặc tả thuộc tính và phương thức cho các lớp trong mô hình lớp, theo đúng cấu trúc của mẫu thiết kế hướng đối tượng.
+1449: 4.5.1. Lớp NgườiDùng
+1450: Thuộc tính
+1451: Kiểu dữ liệu
+1452: Mô tả
+1453: Id
+1454: int
+1455: Khóa chính
+1456: TênĐăngNhập
+1457: string(100)
+1458: Tên đăng nhập
+1459: MậtKhẩuBăm
+1460: string(255)
+1461: Mật khẩu đã băm
+1462: HọTên
+1463: string(150)
+1464: Họ tên
+1465: VaiTrò
+1466: string(20)
+1467: Admin/User
+1468: TrạngThái
+1469: bool
+1470: Hoạt động/khóa
+1471: Phương thức
+1472: Mô tả
+1473: Đầu vào
+1474: Đầu ra
+1475: Điều kiện bắt đầu
+1476: Điều kiện kết thúc
+1477: ĐăngNhập
+1478: Xác thực tài khoản
+1479: Dữ liệu nghiệp vụ tương ứng
+1480: Kết quả/Trạng thái
+1481: Dữ liệu hợp lệ, đúng quyền
+1482: Hoàn tất hoặc báo lỗi
+1483: KiểmTraQuyền
+1484: Kiểm tra quyền chức năng
+1485: Dữ liệu nghiệp vụ tương ứng
+1486: Kết quả/Trạng thái
+1487: Dữ liệu hợp lệ, đúng quyền
+1488: Hoàn tất hoặc báo lỗi
+1489: ĐổiMậtKhẩu
+1490: Cập nhật mật khẩu
+1491: Dữ liệu nghiệp vụ tương ứng
+1492: Kết quả/Trạng thái
+1493: Dữ liệu hợp lệ, đúng quyền
+1494: Hoàn tất hoặc báo lỗi
+1495: 4.5.2. Lớp HộPhòng
+1496: Thuộc tính
+1497: Kiểu dữ liệu
+1498: Mô tả
+1499: Id
+1500: int
+1501: Khóa chính
+1502: MãPhòng
+1503: string(50)
+1504: Mã duy nhất
+1505: TênPhòng
+1506: string(100)
+1507: Tên hộ/phòng
+1508: ĐịaChỉ
+1509: string(255)
+1510: Địa chỉ
+1511: NgườiDùngId
+1512: int?
+1513: Liên kết User
+1514: Phương thức
+1515: Mô tả
+1516: Đầu vào
+1517: Đầu ra
+1518: Điều kiện bắt đầu
+1519: Điều kiện kết thúc
+1520: Thêm
+1521: Tạo hộ/phòng
+1522: Dữ liệu nghiệp vụ tương ứng
+1523: Kết quả/Trạng thái
+1524: Dữ liệu hợp lệ, đúng quyền
+1525: Hoàn tất hoặc báo lỗi
+1526: CậpNhật
+1527: Sửa thông tin
+1528: Dữ liệu nghiệp vụ tương ứng
+1529: Kết quả/Trạng thái
+1530: Dữ liệu hợp lệ, đúng quyền
+1531: Hoàn tất hoặc báo lỗi
+1532: Xóa
+1533: Xóa khi hợp lệ
+1534: Dữ liệu nghiệp vụ tương ứng
+1535: Kết quả/Trạng thái
+1536: Dữ liệu hợp lệ, đúng quyền
+1537: Hoàn tất hoặc báo lỗi
+1538: TraCứu
+1539: Xem/tìm kiếm
+1540: Dữ liệu nghiệp vụ tương ứng
+1541: Kết quả/Trạng thái
+1542: Dữ liệu hợp lệ, đúng quyền
+1543: Hoàn tất hoặc báo lỗi
+1544: 4.5.3. Lớp ĐồngHồ
+1545: Thuộc tính
+1546: Kiểu dữ liệu
+1547: Mô tả
+1548: Id
+1549: int
+1550: Khóa chính
+1551: MãĐồngHồ
+1552: string(50)
+1553: Mã đồng hồ
+1554: Loại
+1555: string(10)
+1556: Điện/Nước
+1557: HộPhòngId
+1558: int
+1559: Liên kết hộ/phòng
+1560: ĐơnVị
+1561: string(10)
+1562: kWh hoặc m³
+1563: Phương thức
+1564: Mô tả
+1565: Đầu vào
+1566: Đầu ra
+1567: Điều kiện bắt đầu
+1568: Điều kiện kết thúc
+1569: GánHộPhòng
+1570: Liên kết đồng hồ
+1571: Dữ liệu nghiệp vụ tương ứng
+1572: Kết quả/Trạng thái
+1573: Dữ liệu hợp lệ, đúng quyền
+1574: Hoàn tất hoặc báo lỗi
+1575: CậpNhậtThôngTin
+1576: Sửa thông tin
+1577: Dữ liệu nghiệp vụ tương ứng
+1578: Kết quả/Trạng thái
+1579: Dữ liệu hợp lệ, đúng quyền
+1580: Hoàn tất hoặc báo lỗi
+1581: LấyChỉSốGầnNhất
+1582: Lấy chỉ số trước
+1583: Dữ liệu nghiệp vụ tương ứng
+1584: Kết quả/Trạng thái
+1585: Dữ liệu hợp lệ, đúng quyền
+1586: Hoàn tất hoặc báo lỗi
+1587: 4.5.4. Lớp ĐơnGiá
+1588: Thuộc tính
+1589: Kiểu dữ liệu
+1590: Mô tả
+1591: Id
+1592: int
+1593: Khóa chính
+1594: Loại
+1595: string(10)
+1596: Điện/Nước
+1597: TừMức
+1598: decimal
+1599: Đầu bậc
+1600: ĐếnMức
+1601: decimal?
+1602: Cuối bậc
+1603: Giá
+1604: decimal
+1605: Đơn giá
+1606: NgàyÁpDụng
+1607: date
+1608: Ngày áp dụng
+1609: Phương thức
+1610: Mô tả
+1611: Đầu vào
+1612: Đầu ra
+1613: Điều kiện bắt đầu
+1614: Điều kiện kết thúc
+1615: KiểmTraHợpLệ
+1616: Kiểm tra đơn giá/bậc giá
+1617: Dữ liệu nghiệp vụ tương ứng
+1618: Kết quả/Trạng thái
+1619: Dữ liệu hợp lệ, đúng quyền
+1620: Hoàn tất hoặc báo lỗi
+1621: TínhTiền
+1622: Tính tiền theo cấu hình
+1623: Dữ liệu nghiệp vụ tương ứng
+1624: Kết quả/Trạng thái
+1625: Dữ liệu hợp lệ, đúng quyền
+1626: Hoàn tất hoặc báo lỗi
+1627: 4.5.5. Lớp ChỉSốĐồngHồ
+1628: Thuộc tính
+1629: Kiểu dữ liệu
+1630: Mô tả
+1631: Id
+1632: int
+1633: Khóa chính
+1634: ĐồngHồId
+1635: int
+1636: Liên kết đồng hồ
+1637: Kỳ
+1638: string(7)
+1639: Tháng/năm
+1640: ChỉSốCũ
+1641: decimal
+1642: Đầu kỳ
+1643: ChỉSốMới
+1644: decimal
+1645: Cuối kỳ
+1646: LượngTiêuThụ
+1647: decimal
+1648: Mức tiêu thụ
+1649: Phương thức
+1650: Mô tả
+1651: Đầu vào
+1652: Đầu ra
+1653: Điều kiện bắt đầu
+1654: Điều kiện kết thúc
+1655: KiểmTraChỉSố
+1656: Kiểm tra hợp lệ
+1657: Dữ liệu nghiệp vụ tương ứng
+1658: Kết quả/Trạng thái
+1659: Dữ liệu hợp lệ, đúng quyền
+1660: Hoàn tất hoặc báo lỗi
+1661: TínhTiêuThụ
+1662: Tính mới - cũ
+1663: Dữ liệu nghiệp vụ tương ứng
+1664: Kết quả/Trạng thái
+1665: Dữ liệu hợp lệ, đúng quyền
+1666: Hoàn tất hoặc báo lỗi
+1667: Lưu
+1668: Lưu theo kỳ
+1669: Dữ liệu nghiệp vụ tương ứng
+1670: Kết quả/Trạng thái
+1671: Dữ liệu hợp lệ, đúng quyền
+1672: Hoàn tất hoặc báo lỗi
+1673: 4.5.6. Lớp HóaĐơn
+1674: Thuộc tính
+1675: Kiểu dữ liệu
+1676: Mô tả
+1677: Id
+1678: int
+1679: Khóa chính
+1680: HộPhòngId
+1681: int
+1682: Liên kết hộ/phòng
+1683: Kỳ
+1684: string(7)
+1685: Kỳ hóa đơn
+1686: TiềnĐiện
+1687: decimal
+1688: Tiền điện
+1689: TiềnNước
+1690: decimal
+1691: Tiền nước
+1692: TổngTiền
+1693: decimal
+1694: Tổng tiền
+1695: TrạngThái
+1696: string(30)
+1697: Thanh toán/công nợ
+1698: Phương thức
+1699: Mô tả
+1700: Đầu vào
+1701: Đầu ra
+1702: Điều kiện bắt đầu
+1703: Điều kiện kết thúc
+1704: LậpHóaĐơn
+1705: Tạo hóa đơn
+1706: Dữ liệu nghiệp vụ tương ứng
+1707: Kết quả/Trạng thái
+1708: Dữ liệu hợp lệ, đúng quyền
+1709: Hoàn tất hoặc báo lỗi
+1710: TínhTổngTiền
+1711: Tổng hợp tiền
+1712: Dữ liệu nghiệp vụ tương ứng
+1713: Kết quả/Trạng thái
+1714: Dữ liệu hợp lệ, đúng quyền
+1715: Hoàn tất hoặc báo lỗi
+1716: CậpNhậtTrạngThái
+1717: Cập nhật thanh toán
+1718: Dữ liệu nghiệp vụ tương ứng
+1719: Kết quả/Trạng thái
+1720: Dữ liệu hợp lệ, đúng quyền
+1721: Hoàn tất hoặc báo lỗi
+1722: 4.5.7. Lớp ThanhToán
+1723: Thuộc tính
+1724: Kiểu dữ liệu
+1725: Mô tả
+1726: Id
+1727: int
+1728: Khóa chính
+1729: HóaĐơnId
+1730: int
+1731: Liên kết hóa đơn
+1732: SốTiền
+1733: decimal
+1734: Số tiền
+1735: NgàyThanhToán
+1736: datetime
+1737: Ngày thanh toán
+1738: PhươngThức
+1739: string(50)
+1740: Phương thức
+1741: TrạngThái
+1742: string(30)
+1743: Trạng thái
+1744: Phương thức
+1745: Mô tả
+1746: Đầu vào
+1747: Đầu ra
+1748: Điều kiện bắt đầu
+1749: Điều kiện kết thúc
+1750: GhiNhậnThanhToán
+1751: Lưu giao dịch
+1752: Dữ liệu nghiệp vụ tương ứng
+1753: Kết quả/Trạng thái
+1754: Dữ liệu hợp lệ, đúng quyền
+1755: Hoàn tất hoặc báo lỗi
+1756: KiểmTraCôngNợ
+1757: Tính số tiền còn nợ
+1758: Dữ liệu nghiệp vụ tương ứng
+1759: Kết quả/Trạng thái
+1760: Dữ liệu hợp lệ, đúng quyền
+1761: Hoàn tất hoặc báo lỗi
+1762: 4.5.8. Lớp PhânTíchAI
+1763: Thuộc tính
+1764: Kiểu dữ liệu
+1765: Mô tả
+1766: Id
+1767: int
+1768: Khóa chính
+1769: HộPhòngId
+1770: int
+1771: Đối tượng phân tích
+1772: Kỳ
+1773: string(7)
+1774: Kỳ
+1775: NhậnXét
+1776: text
+1777: Xu hướng
+1778: CảnhBáo
+1779: text
+1780: Bất thường
+1781: GợiÝ
+1782: text
+1783: Tiết kiệm
+1784: Phương thức
+1785: Mô tả
+1786: Đầu vào
+1787: Đầu ra
+1788: Điều kiện bắt đầu
+1789: Điều kiện kết thúc
+1790: PhânTíchXuHướng
+1791: Phân tích dữ liệu lịch sử
+1792: Dữ liệu nghiệp vụ tương ứng
+1793: Kết quả/Trạng thái
+1794: Dữ liệu hợp lệ, đúng quyền
+1795: Hoàn tất hoặc báo lỗi
+1796: PhátHiệnBấtThường
+1797: Tạo cảnh báo
+1798: Dữ liệu nghiệp vụ tương ứng
+1799: Kết quả/Trạng thái
+1800: Dữ liệu hợp lệ, đúng quyền
+1801: Hoàn tất hoặc báo lỗi
+1802: SinhGợiÝ
+1803: Sinh gợi ý tham khảo
+1804: Dữ liệu nghiệp vụ tương ứng
+1805: Kết quả/Trạng thái
+1806: Dữ liệu hợp lệ, đúng quyền
+1807: Hoàn tất hoặc báo lỗi
+1808: 4.5.9. Lớp DịchVụAI
+1809: Thuộc tính
+1810: Kiểu dữ liệu
+1811: Mô tả
+1812: ApiEndpoint
+1813: string
+1814: Địa chỉ AI API
+1815: Timeout
+1816: int
+1817: Thời gian chờ
+1818: TrạngThái
+1819: string
+1820: Trạng thái kết nối
+1821: Phương thức
+1822: Mô tả
+1823: Đầu vào
+1824: Đầu ra
+1825: Điều kiện bắt đầu
+1826: Điều kiện kết thúc
+1827: GửiYêuCầu
+1828: Gửi dữ liệu
+1829: Dữ liệu nghiệp vụ tương ứng
+1830: Kết quả/Trạng thái
+1831: Dữ liệu hợp lệ, đúng quyền
+1832: Hoàn tất hoặc báo lỗi
+1833: NhậnKếtQuả
+1834: Nhận phản hồi
+1835: Dữ liệu nghiệp vụ tương ứng
+1836: Kết quả/Trạng thái
+1837: Dữ liệu hợp lệ, đúng quyền
+1838: Hoàn tất hoặc báo lỗi
+1839: XửLýLỗi
+1840: Thông báo lỗi và bảo toàn dữ liệu
+1841: Dữ liệu nghiệp vụ tương ứng
+1842: Kết quả/Trạng thái
+1843: Dữ liệu hợp lệ, đúng quyền
+1844: Hoàn tất hoặc báo lỗi
+1845: CHƯƠNG 5: KIỂM THỬ CHỨC NĂNG ỨNG DỤNG
+1846: 5.1. Mục tiêu kiểm thử
+1847: Xác nhận các chức năng UC001-UC011 hoạt động đúng theo đặc tả; dữ liệu được kiểm tra hợp lệ; phân quyền được thực thi; lỗi AI không làm thay đổi dữ liệu gốc.
+1848: 5.2. Tài nguyên kiểm thử
+1849: 5.2.1. Phần cứng
+1850: CPU
+1851: RAM
+1852: Ổ lưu trữ
+1853: Architecture
+1854: Intel Core i5 hoặc tương đương
+1855: 8 GB trở lên
+1856: Tối thiểu 20 GB trống
+1857: 64 bit
+1858: 5.2.2. Phần mềm
+1859: Tên phần mềm
+1860: Phiên bản
+1861: Loại
+1862: IDE/Editor
+1863: Phiên bản nhóm sử dụng
+1864: Công cụ phát triển
+1865: Postman hoặc tương đương
+1866: Phiên bản nhóm sử dụng
+1867: Kiểm thử API/chức năng
+1868: Hệ quản trị CSDL
+1869: Theo bản triển khai
+1870: Lưu trữ dữ liệu
+1871: Windows
+1872: Windows 11 64-bit
+1873: Môi trường chạy ứng dụng
+1874: Chrome/Edge
+1875: Phiên bản hiện hành
+1876: Kiểm thử giao diện
+1877: 5.3. Danh sách các tình huống kiểm tra
+1878: Test ID
+1879: Chức năng
+1880: Mô tả
+1881: Điều kiện trước
+1882: Dữ liệu Test
+1883: Kết quả mong muốn
+1884: TC01
+1885: Đăng nhập
+1886: Đăng nhập đúng
+1887: Có tài khoản hoạt động
+1888: Tài khoản/mật khẩu đúng
+1889: Vào đúng giao diện theo quyền
+1890: TC02
+1891: Đăng nhập
+1892: Sai mật khẩu
+1893: Có tài khoản
+1894: Mật khẩu sai
+1895: Thông báo lỗi
+1896: TC03
+1897: Quản lý hộ/phòng
+1898: Thêm phòng hợp lệ
+1899: Admin đã đăng nhập
+1900: Mã phòng mới
+1901: Lưu và cập nhật danh sách
+1902: TC04
+1903: Quản lý hộ/phòng
+1904: Mã phòng trùng
+1905: Admin đã đăng nhập
+1906: Mã đã tồn tại
+1907: Không tạo trùng
+1908: TC05
+1909: Quản lý đồng hồ
+1910: Thêm và liên kết đồng hồ
+1911: Phòng tồn tại
+1912: Mã mới, loại Điện/Nước
+1913: Lưu và liên kết đúng phòng
+1914: TC06
+1915: Đơn giá
+1916: Thiết lập đơn giá
+1917: Admin đã đăng nhập
+1918: Giá > 0
+1919: Lưu thành công
+1920: TC07
+1921: Nhập chỉ số
+1922: Chỉ số hợp lệ
+1923: Có đồng hồ
+1924: Mới >= cũ
+1925: Lưu và tính tiêu thụ
+1926: TC08
+1927: Nhập chỉ số
+1928: Chỉ số mới nhỏ hơn cũ
+1929: Có đồng hồ
+1930: Mới < cũ
+1931: Từ chối và báo lỗi
+1932: TC09
+1933: Lập hóa đơn
+1934: Đủ chỉ số và đơn giá
+1935: Có dữ liệu kỳ
+1936: Chọn phòng/kỳ
+1937: Tính và lưu hóa đơn
+1938: TC10
+1939: Lập hóa đơn
+1940: Hóa đơn trùng kỳ
+1941: Hóa đơn đã có
+1942: Cùng phòng/kỳ
+1943: Không tạo trùng
+1944: TC11
+1945: Thanh toán
+1946: Cập nhật đã thanh toán
+1947: Có hóa đơn
+1948: Số tiền hợp lệ
+1949: Cập nhật trạng thái/công nợ
+1950: TC12
+1951: Tra cứu
+1952: User xem dữ liệu của mình
+1953: User liên kết phòng
+1954: Chọn kỳ
+1955: Hiển thị đúng dữ liệu
+1956: TC13
+1957: Phân quyền
+1958: User truy cập phòng khác
+1959: User đã đăng nhập
+1960: Dữ liệu ngoài quyền
+1961: Từ chối truy cập
+1962: TC14
+1963: Thống kê
+1964: Thống kê theo thời gian
+1965: Có dữ liệu
+1966: Khoảng thời gian hợp lệ
+1967: Hiển thị tiêu thụ/doanh thu/công nợ
+1968: TC15
+1969: AI phân tích
+1970: Phân tích khi đủ lịch sử
+1971: Có lịch sử
+1972: Dữ liệu 3-6 tháng
+1973: Sinh nhận xét từ dữ liệu
+1974: TC16
+1975: AI cảnh báo
+1976: Mức tiêu thụ tăng mạnh
+1977: Có >=2 kỳ
+1978: Tăng >30%
+1979: Hiển thị cảnh báo tham khảo
+1980: TC17
+1981: AI gợi ý
+1982: Yêu cầu gợi ý tiết kiệm
+1983: Có dữ liệu
+1984: Lịch sử tiêu thụ
+1985: Sinh gợi ý, không sửa dữ liệu
+1986: TC18
+1987: AI lỗi
+1988: AI API không phản hồi
+1989: Có dữ liệu
+1990: Giả lập timeout
+1991: Báo lỗi, bảo toàn dữ liệu
+1992: 5.4. Báo cáo kết quả test (Test Report)
+1993: Bảng kết quả dưới đây được để ở trạng thái Chưa chạy để nhóm cập nhật sau khi thực thi ứng dụng. Báo cáo không tự giả định Pass/Fail khi chưa có kết quả chạy thực tế.
+1994: Test ID
+1995: Ngày testing
+1996: Người tham gia Test
+1997: Pass/Fail
+1998: Độ nghiêm trọng
+1999: Tóm tắt lỗi/Ghi chú
+2000: TC01
+2001: __/__/2026
+2002: Nguyễn Duy Niên / Ngô Thanh Tú
+2003: Chưa chạy
+2004: —
+2005: Cập nhật sau khi chạy test
+2006: TC02
+2007: __/__/2026
+2008: Nguyễn Duy Niên / Ngô Thanh Tú
+2009: Chưa chạy
+2010: —
+2011: Cập nhật sau khi chạy test
+2012: TC03
+2013: __/__/2026
+2014: Nguyễn Duy Niên / Ngô Thanh Tú
+2015: Chưa chạy
+2016: —
+2017: Cập nhật sau khi chạy test
+2018: TC04
+2019: __/__/2026
+2020: Nguyễn Duy Niên / Ngô Thanh Tú
+2021: Chưa chạy
+2022: —
+2023: Cập nhật sau khi chạy test
+2024: TC05
+2025: __/__/2026
+2026: Nguyễn Duy Niên / Ngô Thanh Tú
+2027: Chưa chạy
+2028: —
+2029: Cập nhật sau khi chạy test
+2030: TC06
+2031: __/__/2026
+2032: Nguyễn Duy Niên / Ngô Thanh Tú
+2033: Chưa chạy
+2034: —
+2035: Cập nhật sau khi chạy test
+2036: TC07
+2037: __/__/2026
+2038: Nguyễn Duy Niên / Ngô Thanh Tú
+2039: Chưa chạy
+2040: —
+2041: Cập nhật sau khi chạy test
+2042: TC08
+2043: __/__/2026
+2044: Nguyễn Duy Niên / Ngô Thanh Tú
+2045: Chưa chạy
+2046: —
+2047: Cập nhật sau khi chạy test
+2048: TC09
+2049: __/__/2026
+2050: Nguyễn Duy Niên / Ngô Thanh Tú
+2051: Chưa chạy
+2052: —
+2053: Cập nhật sau khi chạy test
+2054: TC10
+2055: __/__/2026
+2056: Nguyễn Duy Niên / Ngô Thanh Tú
+2057: Chưa chạy
+2058: —
+2059: Cập nhật sau khi chạy test
+2060: TC11
+2061: __/__/2026
+2062: Nguyễn Duy Niên / Ngô Thanh Tú
+2063: Chưa chạy
+2064: —
+2065: Cập nhật sau khi chạy test
+2066: TC12
+2067: __/__/2026
+2068: Nguyễn Duy Niên / Ngô Thanh Tú
+2069: Chưa chạy
+2070: —
+2071: Cập nhật sau khi chạy test
+2072: TC13
+2073: __/__/2026
+2074: Nguyễn Duy Niên / Ngô Thanh Tú
+2075: Chưa chạy
+2076: —
+2077: Cập nhật sau khi chạy test
+2078: TC14
+2079: __/__/2026
+2080: Nguyễn Duy Niên / Ngô Thanh Tú
+2081: Chưa chạy
+2082: —
+2083: Cập nhật sau khi chạy test
+2084: TC15
+2085: __/__/2026
+2086: Nguyễn Duy Niên / Ngô Thanh Tú
+2087: Chưa chạy
+2088: —
+2089: Cập nhật sau khi chạy test
+2090: TC16
+2091: __/__/2026
+2092: Nguyễn Duy Niên / Ngô Thanh Tú
+2093: Chưa chạy
+2094: —
+2095: Cập nhật sau khi chạy test
+2096: TC17
+2097: __/__/2026
+2098: Nguyễn Duy Niên / Ngô Thanh Tú
+2099: Chưa chạy
+2100: —
+2101: Cập nhật sau khi chạy test
+2102: TC18
+2103: __/__/2026
+2104: Nguyễn Duy Niên / Ngô Thanh Tú
+2105: Chưa chạy
+2106: —
+2107: Cập nhật sau khi chạy test
+2108: CHƯƠNG 6: TÀI LIỆU HƯỚNG DẪN SỬ DỤNG
+2109: 6.1. Giới thiệu ứng dụng
+2110: Hệ thống hỗ trợ quản lý hộ/phòng, đồng hồ, đơn giá, chỉ số, hóa đơn, thanh toán, thống kê và lịch sử tiêu thụ. AI hỗ trợ phân tích xu hướng, cảnh báo bất thường và gợi ý tiết kiệm; kết quả AI chỉ mang tính tham khảo.
+2111: 6.2. Cấu hình phần cứng - phần mềm
+2112: Thành phần
+2113: Yêu cầu
+2114: Máy tính
+2115: 64-bit, RAM từ 8 GB
+2116: Kết nối
+2117: LAN/Internet; Internet cần thiết khi gọi AI API
+2118: Hệ điều hành
+2119: Windows 11 hoặc môi trường tương thích
+2120: Trình duyệt
+2121: Chrome/Edge hiện hành
+2122: CSDL
+2123: Theo cấu hình triển khai thực tế của nhóm
+2124: 6.3. Chức năng của Admin
+2125: Chức năng
+2126: Hướng dẫn
+2127: Đăng nhập
+2128: Nhập tài khoản/mật khẩu → Đăng nhập → hệ thống xác thực quyền.
+2129: Quản lý hộ/phòng
+2130: Chọn Thêm/Sửa/Xóa/Xem → nhập thông tin → Lưu.
+2131: Quản lý đồng hồ
+2132: Thêm đồng hồ Điện/Nước → chọn hộ/phòng liên kết → Lưu.
+2133: Thiết lập đơn giá
+2134: Chọn loại → nhập đơn giá/bậc giá → kiểm tra → Lưu.
+2135: Nhập chỉ số
+2136: Chọn hộ/phòng và kỳ → xem chỉ số cũ → nhập chỉ số mới → Lưu.
+2137: Lập hóa đơn
+2138: Chọn hộ/phòng và kỳ → hệ thống lấy chỉ số/đơn giá → kiểm tra → Xác nhận.
+2139: Theo dõi thanh toán
+2140: Chọn hóa đơn → cập nhật trạng thái → Lưu.
+2141: Xem thống kê
+2142: Chọn thời gian/hộ-phòng → xem tiêu thụ, doanh thu và công nợ.
+2143: 6.4. Chức năng của User
+2144: Chức năng
+2145: Hướng dẫn
+2146: Đăng nhập
+2147: Nhập tài khoản/mật khẩu để vào giao diện User.
+2148: Tra cứu hóa đơn
+2149: Mở Tra cứu → chọn hóa đơn/kỳ cần xem.
+2150: Lịch sử tiêu thụ
+2151: Chọn khoảng thời gian → xem bảng/biểu đồ tiêu thụ.
+2152: Phân tích & cảnh báo AI
+2153: Yêu cầu phân tích → xem nhận xét và cảnh báo từ dữ liệu hệ thống.
+2154: AI gợi ý tiết kiệm
+2155: Yêu cầu gợi ý → xem khuyến nghị tham khảo.
+2156: 6.5. Xử lý tình huống thường gặp
+2157: Tình huống
+2158: Cách xử lý
+2159: Không đăng nhập được
+2160: Kiểm tra tài khoản/mật khẩu; nếu bị khóa, liên hệ Admin.
+2161: Không nhập được chỉ số
+2162: Kiểm tra chỉ số mới không âm, không nhỏ hơn chỉ số cũ và kỳ chưa bị trùng.
+2163: Không lập được hóa đơn
+2164: Kiểm tra đã có chỉ số và đơn giá hợp lệ.
+2165: Không xem được dữ liệu
+2166: Kiểm tra quyền và liên kết User với hộ/phòng.
+2167: AI không phản hồi
+2168: Thử lại sau; dữ liệu gốc phải được giữ nguyên.
+2169: 6.6. Lưu ý về AI
+2170: • AI chỉ phân tích dữ liệu do hệ thống cung cấp.
+2171: • AI không thay thế số liệu chỉ số, hóa đơn hoặc thanh toán.
+2172: • Cảnh báo và gợi ý chỉ mang tính hỗ trợ, cần đối chiếu tình hình thực tế.
+2173: • Khi AI API lỗi, hệ thống phải thông báo và bảo toàn dữ liệu gốc.
+2174: CHƯƠNG 7: KẾT LUẬN VÀ HƯỚNG PHÁT TRIỂN
+2175: 7.1. Kết luận
+2176: Báo cáo đã bao quát các giai đoạn theo bộ mẫu: lập kế hoạch, thu thập và làm rõ yêu cầu, đặc tả SRS, thiết kế hướng đối tượng, kiểm thử chức năng và hướng dẫn sử dụng. Nội dung giữ nhất quán với 11 Use Case UC001-UC011 và ba tác nhân Admin, User, AI API Service.
+2177: 7.2. Hướng phát triển
+2178: • Hoàn thiện giao diện và trải nghiệm sử dụng.
+2179: • Bổ sung đọc chỉ số từ ảnh đồng hồ khi mô-đun nhận dạng được triển khai thực tế.
+2180: • Bổ sung nhắc hóa đơn/thanh toán.
+2181: • Mở rộng báo cáo và biểu đồ thống kê.
+2182: • Đánh giá AI trên dữ liệu thực tế lớn hơn.
+2183: • Tăng cường sao lưu, nhật ký hệ thống và kiểm soát quyền truy cập.
+2184: PHỤ LỤC: ĐỐI CHIẾU VỚI CÁC FILE MẪU
+2185: Mẫu
+2186: Phần tương ứng trong báo cáo
+2187: 01 - Project Plan
+2188: Kế hoạch thực hiện 9 tuần
+2189: 02 - Requirements Q&A
+2190: 20 câu hỏi; FR/NFR; sơ đồ phân cấp chức năng
+2191: 03 - Requirements Specification
+2192: Chương 1-3: SRS, Actor, Use Case, UML
+2193: 04 - Object-Oriented Design
+2194: Chương 4: Class Diagram và đặc tả lớp
+2195: 05 - Functional Testing
+2196: Chương 5: tài nguyên, test case, test report
+2197: 07 - User Guide
+2198: Chương 6: cấu hình và hướng dẫn theo Actor
